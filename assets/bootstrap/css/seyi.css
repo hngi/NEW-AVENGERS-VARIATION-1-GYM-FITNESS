@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4, h5, h6{
+    color: #ff4301;
+}
+
+.facilities-header{
+    min-height: 70vh;
+    background-image: url("../s3-images/jonathan.png");
+    color: #ffffff;
+    background-position:center;
+    background-size: cover;
+}
+
+.h-info{
+    background: linear-gradient( rgba( 0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    min-height: 70vh;
+}
+
+.sub-info{
+    max-width: 20em;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.col-half-offset{
+    margin-left:3.166666667%
+}
+
+.m-n-v{
+    background-color: #000000;
+}
+
+.m-info, .v-info{
+    background-color: #ffffff;
+}
