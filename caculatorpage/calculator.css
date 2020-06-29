@@ -1,41 +1,18 @@
-:root{
+:root {
     --default-color: #FF4301;
     --black: #000;
     --light-dark: #333333;
     --font-family: Montserrat;
 }
 
-body{
+body {
     font-size: 16px !important;
     color: var(--black) !important;
+    overflow-x: hidden;
 }
 
 
-.container-fluid{
-    padding: 0 80px !important;
-}
-
-.first-color{
-    background-color: var(--default-color);
-    height: 45px;
-   clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
-}
-
-.second-color{
-    background-color: var(--black);
-    height: 45px;
-    clip-path: polygon(2% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.navlist li a{
-    color: var(--black) !important;
-}
-
-.navlist li a:hover{
-    color: #FF6934 !important;
-}
-
-.jumbo-bg{
+.jumbo-bg {
     position: relative;
     background: url(./calc-img/herohead.png) no-repeat center center;
     -webkit-background-size: cover;
@@ -43,29 +20,29 @@ body{
     -o-background-size: cover;
     background-size: cover;
     width: 100% !important;
-    height: 600px;
+    height: 540px;
     z-index: -3;
 }
 
-.jumbo-bg::after{
+.jumbo-bg::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right,rgb(0, 0, 0), rgba(3, 49, 84, .4));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(3, 49, 84, .7));
     opacity: .7;
     z-index: -1;
 }
 
-.jumbo-wrapper{
+.jumbo-wrapper {
     width: 100%;
     height: 100%;
     z-index: 5;
 }
 
-.jumbo-text{
+.jumbo-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,65 +53,65 @@ body{
     padding: 0 100px;
 }
 
-.jumbo-text .jumbo-colored{
+.jumbo-text .jumbo-colored {
     color: var(--default-color);
     width: 50%;
     border-bottom: 1px solid #FF4301;
 }
 
-.jumbo-text p{
+.jumbo-text p {
     font-size: 1rem;
 }
 
-.jumbo-text h2{
+.jumbo-text h2 {
     font-size: 2.8rem;
 }
 
-.startbtn{
+.startbtn {
     background-color: var(--default-color);
     width: 30%;
     border-radius: 6px;
 }
 
-.calculator-info{
+.calculator-info {
     background-color: var(--black);
     width: 45%;
     border-radius: 7px;
     padding: 15px;
 }
 
-.calculator-info h3{
+.calculator-info h3 {
     color: var(--default-color);
 }
 
-.calculator-info h5{
+.calculator-info h5 {
     font-size: 16px;
 }
 
-.calculator-info label{
+.calculator-info label {
     font-size: 14px;
 }
 
-.calculator-info input{
+.calculator-info input {
     border: 1px solid #FF4301;
 }
 
-.calculator-info button{
+.calculator-info button {
     background-color: var(--default-color);
     color: #fff;
     padding: 10px 50px;
     margin-right: 20px;
 }
 
-.calculator-info button:hover{
+.calculator-info button:hover {
     opacity: .8;
     color: #fff;
 }
 
 .calculator-info table,
-.calculator-info th, 
+.calculator-info th,
 .calculator-info tr,
-.calculator-info td{
+.calculator-info td {
     border: 1px solid #FF4301 !important;
     background-color: #fff;
     color: #FF4301;
@@ -142,55 +119,25 @@ body{
 }
 
 
-.img-show div{
+.img-show div {
     margin: 7px;
 }
 
-.img-show img{
+.img-show img {
     width: 100%;
 }
 
-footer{
-    background-color: var(--black);
-}
-
-footer .nav-link{
-    font-size: 14px;
-}
-
-footer .nav-link:hover{
-    color: #FF6934 !important;
-}
-
-.lastdiv h4{
-    font-size: 16px;
-}
-
-.lastdiv a{
-    font-size: 16px;
-    margin-left: 15px;
-    color: #FF4301;
-}
-
-.lastdiv a:hover{
-    color: #fff;
-}
-
-@media all and (max-width: 1400px){
-   .calculator-info{
-       width: 612px;
-   }
+@media all and (max-width: 1400px) {
+    .calculator-info {
+        width: 612px;
+    }
 
 }
 
-@media all and (max-width: 950px){
-.container-fluid {
-    padding: 0 10px !important;
-}
-
-.jumbo-bg{
-    height: 400px;
-}
+@media all and (max-width: 950px) {
+    .jumbo-bg {
+        height: 400px;
+    }
 
     .jumbo-text {
         width: 100%;
@@ -206,41 +153,35 @@ footer .nav-link:hover{
         border-bottom: 1px solid #FF4301;
     }
 
-    .calculator-info{
+    .calculator-info {
         width: 70%;
     }
 
-    .calculator-info h3{
+    .calculator-info h3 {
         font-size: 1.5rem;
     }
 
-    .bmicalc{
+    .bmicalc {
         flex-direction: column !important;
         width: 100% !important;
         margin: 0 auto;
         padding: 0;
     }
 
-    .weightheightwrap{
+    .weightheightwrap {
         width: 100% !important;
         margin: 0 auto;
     }
 
-    .weightheight{
+    .weightheight {
         flex-direction: column;
     }
 
-    .calcbtn{
+    .calcbtn {
         flex-direction: column !important;
     }
 
-    
-
-    .form-control{
-        width: 100% !important;
-    }
-
-    .calcbtn div{
+    .calcbtn div {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
@@ -254,83 +195,47 @@ footer .nav-link:hover{
         text-align: center;
     }
 
-    .tablewrap{
+    .tablewrap {
         width: 300px !important;
         margin-right: auto !important;
         justify-content: center !important;
     }
 
-    table{
+    table {
         margin-left: auto;
         margin-right: auto;
     }
+}
 
-    .footernav{
-        flex-direction: column;
+@media all and (max-width: 650px) {
+    .jumbo-text {
+        width: 100%;
+        height: 100%;
+        padding: 0 40px;
     }
 
-    .footernav a{
-        font-size: 12px;
-        text-align: right;
+    .jumbo-text h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
     }
 
-    .lastdiv h4{
-        font-size: 13px;
+    .calculator-info {
+        width: 100% !important;
     }
 
-    .lastdiv a {
-        margin-left: 5px;
-        color: #FF4301;
+    .calculator-info h3 {
+        font-size: 1.3rem;
     }
-}
 
-@media all and (max-width: 650px){
-.jumbo-text {
-    width: 100%;
-    height: 100%;
-    padding: 0 40px;
-}
+    .weightheightwrap {
+        width: 100% !important;
+    }
 
-.jumbo-text h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
+    .tablewrap {
+        width: 210px !important;
+    }
 
-.sec{
-    padding: 5px !important;
-}
-
-.calculator-info{
-    width: 100% !important;
-}
-
-   .calculator-info h3 {
-       font-size: 1.3rem;
-   }
-
-   .weightheightwrap{
-       width: 100% !important;
-   }
-
-   .w-75{
-       width: 100% !important;
-   }
-
-   .tablewrap{
-       width: 210px !important;
-   }
-
-   .bmidetails{
-       width: 100% !important;
-   }
-
-   .footernav a{
-       font-size: 10px;
-   }
-
-   .lastdiv h4{
-       padding-left: 4px;
-       margin-top: -95px;
-       font-size: 10px;
-   }
+    .bmidetails {
+        width: 100% !important;
+    }
 }
