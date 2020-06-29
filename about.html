@@ -1,21 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- bootstrap css -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/seyi.css">
-        <title>About</title>
-    </head>
+<head>
+	<meta charset="utf-8">
+	<!-- WEBSITE DESCRIPTION -->
+	<meta name="description" content="BEFIT: a html template for Gym And Fitness organization">
+	<meta name="keyword" content="HTML, CSS, BOOTSTRAP, JAVACRIPT">
+	<meta name="author" centent="Rex[02]">
+	<!-- OPTIMIZIED VIEWPORT FOR MOBILE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale =1.0">
+	<title>BEFIT</title>
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@800&display=swap" rel="stylesheet">
+
+	<!-- GLOBAL CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<!-- ADD YOUR CSS -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
     <body>
+        <!--  NAVBAR STARTS HERE -->
+		<header>
+			<!-- DESKTOP NAVBAR STARTS -->
+			<nav class="container-fluid topnav hide">
+				<div class="row wrapper">
+					<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+						<h1 class="company-name">BE<b id="bold">FIT</b></h1>
+					</div>
+					<div class="col-9 col-sm-9 col-md-9 col-lg-9">
+						<ul class="navigation">
+							<li><a href="">HOME</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">PAGES</a></li>
+							<li><a href="">OUR TEAM</a></li>
+							<li><a href="">ABOUT US</a></li>
+							<li><a href="">CONTACT</a></li>
+						</ul>
+					</div>	
+				</div>
+			</nav>
+			<!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+			<!-- MOBILE NAV STARTS -->
+			<div class="fixed-top guy hide-mobile-nav">
+			  <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+			    <div class="p-4 nav-bg">
+			      	<h5 class="text-white h4">
+			      		<ul class="mobile-nav">
+			      			<li>
+			      				<input class="form-control mr-sm-2" type="search" placeholder="Search Keyword" aria-label="Search">
+			      			</li>
+							<li><a href="">HOME</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">PAGES</a></li>
+							<li><a href="">OUR TEAM</a></li>
+							<li><a href="">ABOUT US</a></li>
+							<li><a href="">CONTACT</a></li>
+						</ul>
+			  		</h5>
+			    </div>
+			  </div>
+			  <nav class="navbar navbar-dark hj">
+			  	<h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class=""><img src="images/navicon.svg" id="navicon"></span>
+			    </button>
+			  </nav>
+			</div>
+            <!-- MOBILE NAV ENDS -->
+
+		</header>
         <!-- header section -->
         <header class="header" id="header">
             <div class="container-fluid">
                 <div class="row height-max image-header
-                align-items-center" style="background-image: url(assets/bootstrap/s3-images/jonathan.png);">
+                align-items-center" style="background-image: url(images/jonathan.png);">
                     <div class="col-12 h-info d-flex justify-content-center
                     align-items-center col-lg-6 img-section">
                         <div class="sub-info">
@@ -37,7 +101,7 @@
                 <div class="row about-us">
                     <div class="col-12 mx-auto col-lg-6 img-section my-3">
                         <div class="">
-                        <img src="assets/bootstrap/s3-images/edgar-chaparro.png" alt="gyming" class="img-fluid"/>
+                        <img src="images/edgar-chaparro.png" alt="gyming" class="img-fluid"/>
                         </div>
                     </div>
                     <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
@@ -123,40 +187,91 @@
                     </div>
                     <div class="col-12 mx-auto col-lg-6 img-section my-3">
                         <div class="">
-                        <img src="assets/bootstrap/s3-images/dane-wetton.png" alt="suites" class="img-fluid"/>
+                        <img src="images/dane-wetton.png" alt="suites" class="img-fluid"/>
                         </div>
                     </div>
                 <!-- end of img row -->
                 </div>
                 <div class="row text-center  icon-text">
                     <div class="col-12 col-lg-2 col-half-offset py-2">
-                        <img src="assets/bootstrap/s3-images/bx_bx-calendar-heart.png" alt="calender">
+                        <img src="images/bx_bx-calendar-heart.png" alt="calender">
                         <p class=" p-5">Consultation</p>
                     </div>
                     <div class=" col-lg-2 col-half-offset py-2">
-                        <img src="assets/bootstrap/s3-images/cil_people.png" alt="people">
+                        <img src="images/cil_people.png" alt="people">
                         <p class="p-5">Best Trainers</p>
                     </div>
                     <div class=" col-lg-2 col-half-offset py-2">
-                        <img src="assets/bootstrap/s3-images/bx_bx-time.png" alt="time">
+                        <img src="images/bx_bx-time.png" alt="time">
                         <p class=" p-5">1248 Working Hours</p>
                     </div>
                     <div class=" col-lg-2 col-half-offset py-2">
-                        <img src="assets/bootstrap/s3-images/carbon_thumbs-up.png" alt="thumbs-up">
+                        <img src="images/carbon_thumbs-up.png" alt="thumbs-up">
                         <p class=" p-5">600 Success Stories</p>
                     </div>
                     <div class=" col-lg-2 col-half-offset py-2">
-                        <img src="assets/bootstrap/s3-images/bi_heart.png" alt="heart">
+                        <img src="images/bi_heart.png" alt="heart">
                         <p class=" p-5">1500 Happy Clients</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end of choose section -->
-        
-        <script src="./assets/jquery/jquery-3.5.1.min.js"></script>
-        <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="./assets/font awsome/js/all.js"></script>
-        <script src="./assets/popper/popper.min.js"></script>
-    </body>
+        <!-- DESKTOP FOOTER STARTS -->
+		<footer class="foot hide">
+			<nav class="foot-nav">
+				<ul class="footnav">
+					<li class="companyname desk">BEFIT</li>
+					<li class="margin list"><a href=""></a>HOME</li>
+					<li class="list"><a href=""></a>TOUR</li>
+					<li class="list"><a href=""></a>COOKIES POLICY</li>
+					<li class="list"><a href=""></a>LEGAL TERMS</li>
+				</ul>
+				<hr id="hr">
+				<div class="socials">
+					<p class="slogn">THE BEST WAY TO BE HEALTHY</p>
+					<p class="socialicons margin">
+						<a href="#"><img class="m-0 p-0 px-2 margin" src="images/instagram.svg" alt="instagram logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="images/twitter.svg" alt="twitter logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="images/facebook.svg" alt="pinterest logo"></a>
+                  	</p>
+				</div>
+			</nav>
+		</footer>
+	<!-- FOOTER ENDS -->
+
+	<!-- MOBILE FOOTER STARTS -->
+		<footer class="mobile-foot hd">
+			<div><h1 class="companyname">BEFIT</h1></div>
+			<div>
+				<ul class="mobilenav">
+					<li><a href=""></a>HOME</li>
+					<li><a href=""></a>TOUR</li>
+					<li><a href=""></a>COKIES POLICY</li>
+					<li><a href=""></a>LEGAL TERMS</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mobilenav">
+					<li class="">THE BEST WAY TO BE HEALTHY</li>
+					<li>
+						<p class="socialicons margin">
+							<a href="#"><img class="m-0 p-0 px-2 margin" src="images/instagram.svg" alt="instagram logo"></a>
+	                        <a href="#"><img class="m-0 p-0 px-2" src="images/twitter.svg" alt="twitter logo"></a>
+	                        <a href="#"><img class="m-0 p-0 px-2" src="images/facebook.svg" alt="pinterest logo"></a>
+                  		</p>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	<!-- MOBILE FOOTER ENDS -->
+
+	<!-- JAVCRIPT FILES -->
+	
+	<script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
 </html>
