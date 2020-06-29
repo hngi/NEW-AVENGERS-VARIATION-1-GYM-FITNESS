@@ -1,0 +1,112 @@
+:root {
+  font-size: 1em;
+}
+html, body, .main  {
+  height: 100%;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  height: 100%;
+  flex: 1 1 auto;
+  background-image: url(bg-image.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 20%;
+}
+
+.hero-inner {
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  margin-right: 2em;
+  max-width: 300px;
+}
+
+@media (min-width: 578px) {
+  .hero-inner {
+    margin-right: 20%;
+    max-width: 350px;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .feature-row  {
+    display: flex;
+  }
+}
+
+
+
+.heading {
+  position: relative;
+  min-height: 100px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+  /* Fallback Color if text-stroke is not supported */
+  color: #ff4301;
+}
+
+.heading h1 {
+  font-weight: bold;
+}
+.heading .outline {
+  position: absolute;
+  -webkit-text-stroke: 10px black;
+}
+
+.heading .text {
+  position: absolute;
+  -webkit-text-fill-color: white;
+}
+.orange {-webkit-text-fill-color: #ff4301;}
+.btn-error {
+  border-radius: 0.75em;
+  background-color: #ff4301;
+  margin-left: 20%;
+}
+
+.btn-error:hover {
+  background-color: #ff4301aa;
+}
+
+.btn-error a {
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.feature-row  {
+  display: none;
+}
+
+.feature {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+@media (min-width: 578px) {
+  .feature-row  {
+    display: flex;
+  }
+}
+
+.feature-icon {
+  width: 50%;
+  max-width: 70px;
+}
