@@ -1,0 +1,943 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+select{
+	background: #000000;
+	color: #FBFAFB;
+}
+
+footer{
+	display: block;
+}
+
+
+
+
+@media all and (min-width: 0px){
+
+
+	/*cover section*/
+
+	.cover{
+		font-family: 'Montserrat', sans-serif;
+		background-image: url("../images/landingcovermobile.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 60vh;
+		color: #FFFFFF;
+		padding: 80px 20px 50px 20px;
+		width: 100%;
+	}
+
+	#slogan{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.875rem;
+	}
+
+	.covertext{
+		font: 1rem/1.5rem 'Montserrat', sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: normal;
+
+	}
+
+	/*card section*/
+	.cards{
+		background-color: white;
+		height: 50vh;
+		width: 100%;
+	}
+	.card_s{
+		top: 60%;
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+	}
+	.card-body{
+		height: 220px;
+	}
+
+	.card{
+		height: 200px;
+	}
+
+	.card-title{
+		font-size: 0.9rem;
+	}
+
+	.card-text{
+		display: flex;
+		align-items: flex-end;
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+	}
+
+	.grey{
+		background: #FBFAFB;
+		color: #000000;
+	}
+
+	.orange{
+		background: #FF4301;
+		color: #FFFFFF;
+
+	}
+
+	.cardheader{
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: 1.3rem;	
+	}
+
+	.mk{
+		margin-bottom: 10px;
+	}
+
+	
+	/*card section ends*/
+
+	/*cover section ends*/
+
+	/*about section begins*/
+	.about{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		background: #FBFAFB;
+		height: 60vh;
+	}
+
+	.about-img{
+		background-image: url(../images/about-mobile.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 50vh;
+
+	}
+
+	.aboutwrapper{
+		padding: 10px;
+		margin: 0;
+	}
+
+	.about-content{
+		padding: 10px;
+	}
+
+	.title{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+		color: #000000;
+		padding: 15px 0;
+
+
+	}
+
+	.subtitle{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		color: #FF4301;
+
+	}
+
+	.about-text{
+		font-size: 12px;
+	}
+
+	/*about section ends*/
+
+	/*services intro starts*/
+	.services-intro{
+		display: grid;
+		width: 100%;
+		height: 30vh;
+		background-image: url("../images/services-intro.svg");
+		margin: 0;
+	}
+
+	.extra{
+		height: 20vh;
+	}
+
+	.services-introwrapper{
+		margin: 0;
+		align-items: center;
+		padding-left: 10px;
+		
+	}
+
+	.introimg{
+		height: 40px;
+	}
+
+	/*servives intro ends*/
+
+	/*services start*/
+
+	.prog{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 22px;
+
+		color: #000000;
+
+	}
+	.services{
+		background: #FBFAFB;
+		padding: 2.0%;
+		height: 60vh;
+
+	}
+
+	.serviceswrapper{
+		width: 100%
+	}
+
+	.services-img{
+		background-image:
+		 url("../images/servicescover1.svg"),
+		 url("../images/servicescover2.svg");
+		 background-position: 
+		 100% 12%,
+		 80% 0.1%;
+		background-size:
+		200px, 205px;
+		background-repeat: no-repeat;
+		height: 60vh;
+	}
+
+	.sev-img{
+		height: 30px;
+	}
+	/*services ends*/
+
+	/*gym class section starts*/
+	.Gymclass{
+		height: 100%;
+		margin: 0;
+		width: 100%;
+		background: #FBFAFB;
+		
+	}
+
+	.Gymclasswrapper{
+		margin: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.gym-img{
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.clas2{
+		padding-left: 3.7%;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 22px;
+		color: #000000;
+
+	}
+
+	.cls{
+		display: flex;
+
+	}
+
+	.enroll{
+		margin-left: auto;
+		padding-right: 20px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 22px;
+		color: #FF4301;
+
+	}
+
+	.try{
+		padding-left: 35px;
+		width: 100%;
+	}
+	/*gym class section ends*/
+
+	/*pricing sections*/
+	.background{
+		font-size: 12px;
+	}
+
+	.pricing{
+		background: #FFFFFF;
+	}
+	/*pricing section ends*/
+
+	/*form section starts*/
+	.forms{
+		background: #000000;
+		color: #FFFFFF; 
+		height: 100%;
+		margin: 0;
+		width: 100%;
+	}
+
+	.formwrapper{
+		margin: 0;
+		padding: 4% 6.4%;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.selectwrapper{
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		padding: 10px 10px 10px 20px;
+		border: 1px solid #FBFAFB;
+		width: 100%;
+	}
+
+	.sizing{
+		margin: 0.8% 3.2% 3.2% 0.8%;
+		width: 30%;
+		padding: 15px;
+	}
+
+	.ff{
+		padding-left: 15px;
+	}
+
+	.sizing2{
+		padding-bottom: 5px;
+	}
+
+	.sizing3{
+		padding: 0;
+	}
+	/*form section ends*/
+
+	/*test section starts*/
+	.test-section{
+		background: #FF4301;
+		color: #FFFFFF;
+		height: 100%;
+	}
+
+	.test-img{
+		height: 370px;
+		width: 100%;
+		padding: 27px 0  10px 0;
+
+	}
+
+	.testwrapper{
+		padding: 5% 2.5%;
+	}
+
+	.test-title{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		/* identical to box height */
+
+
+		color: #FFFFFF;
+	}
+
+	.test-content{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+
+	}
+	/*test section ends*/
+
+	/*gallery section starts*/
+	.gallery{
+		background: #FFFFFF;
+		height: 100%;
+		padding: 50px 10px;
+	}
+
+	.gal-class{
+		position: absolute;
+		z-index: 2;
+		top: 90%;
+		left: 10%;
+		padding-left: 20px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 34px;
+
+		color: #FF4301;
+
+	}
+
+	.gallery-img{
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.gallerywrapper{
+		padding: 0;
+		margin: 0;
+	}
+
+	.size{
+		margin: 0;
+		padding: 0;
+	}
+	/*gallery section ends*/
+
+	/*carousel starts*/
+	.slides{
+		height: 100%;
+		background: #FBFAFB;
+		padding-top: 4.68%;
+	}
+
+	.d-block, .w-100{
+		height: 200px;
+	}
+
+	.reviews{
+		display: grid;
+		justify-content: center;
+		text-align: justify;
+		padding: 10px;
+		text-align: justify;
+	}
+
+	.review{
+		padding: 0 30px;
+	}
+
+	.clientname{
+		text-align: center;
+		font: 28px/28px Open Sans;
+		color: #FF4301;
+	}
+
+	.navimg{
+		height: 30px;
+	}
+	/*carousel ends*/
+
+	/*blog section starts*/
+	.blog{
+		padding: 4.3%;
+	}
+
+	.blogwrapper{
+		margin: 0;
+	}
+
+	.show{
+		display: block;
+	}
+
+	.blogimg{
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+		padding: 1%;
+	}
+
+	.post{
+		position: absolute;
+		z-index: 2;
+		top: 70%;
+		left: 10%;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 28px;
+		color: #FFFFFF;
+	}
+	/*blog section ends*/
+
+	/*contact section begins*/
+	.contactwrapper{
+		background: #222222;
+		color: #FFFFFF;
+		margin: 0;
+		width: 100%;
+
+	}
+
+	.align{
+		display: grid;
+		justify-content: center;
+		padding: 2.25%;		
+
+	}
+
+	.contactus{
+
+	}
+
+	.date{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 28px;
+		color: #FFFFFF;
+	}
+
+	.sch{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+		color: #FF4301;
+	}
+
+	.subtitle{
+		font-size: 20px;
+	}
+	/*contact section ends*/
+	
+
+}
+
+@media all and (min-width: 575px){
+	.pricing{
+		display: none;
+	}
+	.gallery{
+		height: 100%;
+		padding: 50px;
+	}
+
+	.gal-class{
+		padding-left: 0;
+		font-size: 16px;
+	}
+
+	.hide1{
+		display: block;
+	}
+}
+
+@media all and (min-width: 768px){
+	/*cover section*/
+
+	.hide{
+		display: block;
+	}
+
+	.cover{
+		font-family: 'Montserrat', sans-serif;
+		background-image: url("../images/landingcover.svg");
+		height: 100%;
+		color: #FFFFFF;
+		padding: 100px;
+		width: 100%;
+	}
+
+	#slogan{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+
+	.covertext{
+		font: 1rem/1.5rem 'Montserrat', sans-serif;
+		font-weight: 300;
+
+	}
+	/*card section*/
+	.cards{
+		background-color: white;
+		height: 100%
+		width: 100%;
+		
+	}
+	.card_s{
+		position: relative;
+		top: 80%;
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+	}
+
+	.card-title{
+		font-size: 2rem;
+	}
+
+	.card-text{
+		display: flex;
+		align-items: flex-end;
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+	}
+
+	.grey{
+		background: #FBFAFB;
+		color: #000000;
+	}
+
+	.orange{
+		background: #FF4301;
+		color: #FFFFFF;
+
+	}
+
+	.cardheader{
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: 1.3rem;	
+	}
+
+	/*card section ends*/
+
+	/*cover section ends*/
+
+
+	/*about section begins*/
+	.about{
+		height: 60vh;
+	}
+
+	.about-img{
+		height: 55vh;
+		width: 100%;
+	}
+
+	/*about section ends*/
+
+	/*service intro starts*/
+	.services-introwrapper{
+		margin: 0;
+		align-items: center;
+		padding-left: 50px;
+		
+	}
+
+	/*service into ends*/
+
+	/*services start*/
+	.services{
+		padding: 4.8%;
+		height: 80vh;
+
+	}
+
+	.services-img{
+		background-image:
+		 url("../images/servicescover1.svg"),
+		 url("../images/servicescover2.svg");
+		 background-position: 
+		 90% 50%,
+		 50% 2%;
+		background-size:
+		310px, 300px;
+		background-repeat: no-repeat;
+		height: 70vh;
+	}
+
+
+
+	/*services ends*/
+
+	/*gym class section starts*/
+	.Gymclass{
+		height: 80vh;
+		padding: 50px 100px;
+	}
+
+	.Gymclasswrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.gym-img{
+		height: 100%;
+		width: 100%;
+		padding: 0;
+
+	}
+
+	.enroll{
+		margin-left: auto;
+		padding-right: 0;
+	}
+
+	.try{
+		padding-left: 18px;
+		width: 100%;
+	}
+
+	.clas2{
+		font-size: 15px;
+	}
+	
+	/*gym class section ends*/
+
+	/*pricing starts*/
+	.pricing{
+		background: #FFFFFF;
+	}
+
+	.background{
+		padding: 1%;
+		background: #FBFAFB;	
+	}
+	/*pricing ends*/
+
+	/*form section*/
+
+	/*form section ends*/
+
+	/*test section starts*/
+	.testwrapper{
+		padding: 5%;
+	}
+	.test-title{
+		font-size: 30px;
+	}
+
+	/*test section ends*/
+
+	/*gallery section starts*/
+	.gallery{
+		height: 100vh;
+	}
+	/*gallery section ends*/
+
+	/*carousel section starts*/
+	.slides{
+		height: 100%;
+	}
+
+	/*carousel section ends*/
+
+	/*blog section starts*/
+	.post{
+		font-size: 26px;
+	}
+
+	.kk{
+		display: grid;
+		align-items: center;
+	}
+
+	.blogimg1{
+		height: 100%;
+	}
+	/*blog section ends*/
+
+	.show{
+		display: none;
+	}
+
+	/*contact us start*/
+	.align{
+		display: grid;
+		justify-content: flex-start;
+	}
+
+	.title{
+		font-size: 2.25rem;
+	}
+
+		
+	/*contact us ends*/
+	
+}
+
+@media all and (min-width: 992px){
+
+
+	.hide{
+		display: block;
+	}
+
+	.cover{
+		height: 90vh;
+		padding: 150px;
+	}
+
+	#slogan{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	.covertext{
+		font: 1.25rem/1.5rem 'Montserrat', sans-serif;
+		font-weight: 300;
+
+	}
+
+	/*card section starts*/
+
+	.cards{
+		background-color: white;
+		height: 30vh;
+		width: 100%;
+		
+	}
+
+	.card_s{
+		position: absolute;
+		top: 90%;
+	}
+
+	.card{
+		height: 300px;
+	}
+	/*card section ends*/
+
+	/*about section starts*/
+	.about{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		background: #FBFAFB;
+		height: 70vh;
+	}
+
+	.about-img{
+		height: 60vh;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.aboutwrapper{
+		padding: 40px;
+	}
+	/*about section ends*/
+
+	/*service intro starts*/
+	.services-introwrapper{
+		margin: 0;
+		align-items: center;
+		padding-left: 100px;
+		
+	}
+
+	/*service into ends*/
+
+	/*services start*/
+
+	.services{
+		padding: 6.4%;
+		height: 80vh;
+
+	}
+
+	.services-img{
+		background-image:
+		 url("../images/servicescover1.svg"),
+		 url("../images/servicescover2.svg");
+		 background-position: 
+		 70% 50%,
+		 60% 10%;
+		background-size:
+		350px, 350px;
+		background-repeat: no-repeat;
+		height: 70vh;
+	}
+	/*services ends*/
+
+	/*gym class section starts*/
+	
+	/*gym class section ends*/
+
+	/*gallery section starts*/
+	.gallery{
+		height: 120vh;
+	}
+
+	.gal-class{
+		padding-left: 0;
+		font-size: 28px;
+	}
+
+	/*form section starts*/
+
+	/*form section ends*/
+	/*test section starts*/
+	.testwrapper{
+		padding: 5% 5% 3% 5%;
+	}
+	.test-title{
+		font-size: 36px;
+	}
+	/*test section ends*/
+
+	/*gallery section ends*/
+
+	/*carousel section starts*/
+	.slides{
+		height: 60vh;
+	}
+	/*carousel section ends*/
+}
+
+/*BUTTONS*/
+.color, .color a{
+	background-color: #FF4301;
+	border-radius: 5px;
+	color: #FFFFFF;
+}
+
+.about-btn{
+	margin-left: 10px;
+}
+
+.cal-btn{
+	width: 100%;
+}
+
+.border{
+	border: 1px solid color: #FFFFFF;
+}
+
+.test-btn{
+	margin-top: 3.75%;
+}
