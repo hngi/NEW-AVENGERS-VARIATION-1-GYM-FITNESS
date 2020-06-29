@@ -17,6 +17,10 @@ footer{
 	display: block;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 
 
 
@@ -34,6 +38,8 @@ footer{
 		color: #FFFFFF;
 		padding: 80px 20px 50px 20px;
 		width: 100%;
+		position: relative;
+		z-index: 0;
 	}
 
 	#slogan{
@@ -52,17 +58,19 @@ footer{
 	/*card section*/
 	.cards{
 		background-color: white;
-		height: 50vh;
+		height: 45vh;
 		width: 100%;
 	}
 	.card_s{
-		top: 60%;
+		position: absolute;
+		z-index: 1;
+		top: 42%;
 		width: 100%;
 		padding: 10px;
 		margin: 0;
 	}
 	.card-body{
-		height: 220px;
+		height: 225px;
 	}
 
 	.card{
@@ -150,7 +158,7 @@ footer{
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 22px;
 		color: #FF4301;
 
@@ -259,7 +267,7 @@ footer{
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 22px;
 		color: #000000;
 
@@ -589,26 +597,26 @@ footer{
 	/*card section*/
 	.cards{
 		background-color: white;
-		height: 100%
+		height: 20vh;
 		width: 100%;
 		
 	}
 	.card_s{
-		position: relative;
-		top: 80%;
+		position: absolute;
+		top: 45%;
 		width: 100%;
 		padding: 10px;
 		margin: 0;
 	}
 
 	.card-title{
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.card-text{
 		display: flex;
 		align-items: flex-end;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		line-height: 1.5rem;
 	}
 
@@ -642,6 +650,10 @@ footer{
 	.about-img{
 		height: 55vh;
 		width: 100%;
+	}
+
+	.about-inner{
+		padding: 50px;
 	}
 
 	/*about section ends*/
@@ -682,7 +694,7 @@ footer{
 
 	/*gym class section starts*/
 	.Gymclass{
-		height: 80vh;
+		height: 60vh;
 		padding: 50px 100px;
 	}
 
@@ -718,6 +730,7 @@ footer{
 	/*pricing starts*/
 	.pricing{
 		background: #FFFFFF;
+		height: 60vh;
 	}
 
 	.background{
@@ -742,13 +755,17 @@ footer{
 
 	/*gallery section starts*/
 	.gallery{
-		height: 100vh;
+		height: 80vh;
 	}
 	/*gallery section ends*/
 
 	/*carousel section starts*/
 	.slides{
 		height: 100%;
+	}
+
+	.reviews{
+		text-align: center;
 	}
 
 	/*carousel section ends*/
@@ -822,7 +839,7 @@ footer{
 
 	.card_s{
 		position: absolute;
-		top: 90%;
+		top: 75%;
 	}
 
 	.card{
@@ -849,6 +866,14 @@ footer{
 
 	.aboutwrapper{
 		padding: 40px;
+	}
+
+	.about-inner{
+		padding: 100px;
+	}
+
+	.about-text{
+		margin-top: 20px;
 	}
 	/*about section ends*/
 
@@ -885,6 +910,13 @@ footer{
 	/*services ends*/
 
 	/*gym class section starts*/
+	.Gymclass{
+		height: 80vh;
+	}
+
+	.pricing{
+		height: 80vh;
+	}
 	
 	/*gym class section ends*/
 
@@ -916,7 +948,18 @@ footer{
 	.slides{
 		height: 60vh;
 	}
+
+	.reviews{
+		text-align: justify;
+	}
 	/*carousel section ends*/
+}
+
+@media all and (min-width: 1140px){
+	.cover{
+		height: 90vh;
+		padding: 240px 150px;
+	}
 }
 
 /*BUTTONS*/
