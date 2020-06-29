@@ -276,4 +276,8 @@ body {
     .bmidetails {
         width: 100% !important;
     }
+
+    .img-show div{
+        margin-bottom: 20px;
+    }
 }
