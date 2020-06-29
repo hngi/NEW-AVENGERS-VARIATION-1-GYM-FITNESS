@@ -29,7 +29,8 @@ body,html{
 .after{
     width:100%; 
     height:15px; 
-    background-color:#FF4301
+    background-color:#FF4301;
+    margin-bottom: 10vw;
 }
 
 /* the flex container in which the trainers cards are housed */
@@ -72,6 +73,14 @@ body,html{
     transition: all 0.5s ease-in-out
 }
 /* overlay over the image cards when hovered */
+.overlay{
+    width:100%;
+    height:100%;
+    position: absolute; 
+    top: 1px;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.082) 60%, rgba(83, 98, 126, 0.747));
+    transition: all 0.5s ease-in-out;
+}
 .card:hover  .overlay {   
     width:100%;
     height:100%;
@@ -115,10 +124,13 @@ body,html{
     color:#FF4301;
     font-size:2vw
 }
+
+/* horinzonal line */
 .hr{
     width:15%; 
     height:1px; 
-    background-color:#FF4301
+    background-color:#FF4301;
+    margin-bottom: 10vw;
 }
 /* full picture of the main div on landscape orientation for responsiveness */
 @media only screen and (orientation:landscape){
@@ -144,6 +156,8 @@ body,html{
         letter-spacing: 0.5px;
         top:30% !important
     }
+
+/* "OUR trainers text" */
 .train{
     font-size:5vw
 }
@@ -163,6 +177,7 @@ body,html{
         font-size: 5.5vw;
         transition: all 0.5s ease-in-out
     }
+/* smaller text on mobile */
 .hide p{
         font-size: 3.2vw;
     }
