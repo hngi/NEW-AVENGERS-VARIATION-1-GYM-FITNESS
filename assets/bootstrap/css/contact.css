@@ -38,9 +38,9 @@ body {
   background: #ffffff;
 }
 
-.bg_grey {
-  background-color: #e5e5e5 !important;
-}
+/* .bg_grey {
+  background: #f7f7f7;
+} */
 
 .contact .rectangle_1 {
   background: url('../../../images/Rectangle\ 12.png');
@@ -130,7 +130,31 @@ body {
   }
 }
 
+@media (max-width: 1440px) {
+  .know_more {
+    display: none !important;
+  }
+}
+
+@media (max-width: 2560px) {
+  .know_more {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hide {
+    display: none !important;
+  }
+  .contact_us .know_more {
+    display: block !important;
+  }
+}
+
 @media (max-width: 990px) {
+  .know_more {
+    display: none !important;
+  }
   .contact_us .bg_light {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -141,9 +165,22 @@ body {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .bg_grey {
+    background: #f7f7f7 !important;
+  }
 }
 
 @media (max-width: 768px) {
+  .bg_grey {
+    background: #ffffff !important;
+  }
+  .contact_us h4 {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center !important;
+    color: #000000;
+  }
   .rectangle_1 {
     display: none !important;
   }
@@ -184,9 +221,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .top_square {
+  /* .top_square {
     display: none !important;
-  }
+  } */
   .contact .img_opacity {
     padding-left: 30px !important;
   }
@@ -195,4 +232,15 @@ body {
     color: #000000;
   }
 }
+
+@media (max-width: 763px) {
+  .top_square {
+    position: relative;
+    right: 0px !important;
+    top: 573px !important;
+    width: 10%;
+    left: 160px;
+  }
+}
+
 /* Contact Us end */
