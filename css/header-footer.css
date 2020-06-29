@@ -21,6 +21,8 @@ footer{
 /*desktop nav section*/
 header{
     width: 100%;
+    position: fixed;
+    z-index: 3;
 }
 main{
     width: 100%;
@@ -177,6 +179,10 @@ main{
 
 /* TABLET AND OTHER BIG SCREENS RESPONSIVENESS */
 @media only screen and (min-width: 768px){
+    .topnav{
+        background: linear-gradient(45deg, red 20%, black 20%);
+        background-size: cover;
+    }
     .hide-mobile-nav{
         display: none;
     }
@@ -186,7 +192,7 @@ main{
         font-family: Roboto;
         font-size: 20px;
         font-weight: lighter;
-        margin-left: 50px;
+        margin-left: 30px;
         /*nav section ends*/
     }
 
@@ -194,11 +200,15 @@ main{
     .navigation ,.navigation a{
         display: flex;
         list-style: none;
-        padding: 0 1rem;
+        padding: 0 0.9rem;
         align-items: center;
         justify-content: flex-end;
         color: white;
 
+    }
+
+    .hide{
+        display: block;
     }
 
     footer{
@@ -210,16 +220,15 @@ main{
     }
 
     #hr{
-    background-color: #FFFFFF;
-    /*width: 100%;*/
-    margin: 0 1.2%;
+        background-color: #FFFFFF;
+        margin: 0 1.2%;
     }
 
 
     .foot{
         display: grid;
         background: #000000;
-        height: 30vh;
+        height: 100%;
         padding: 4.2%;
 
     }
