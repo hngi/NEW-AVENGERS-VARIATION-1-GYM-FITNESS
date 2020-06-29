@@ -1,9 +1,7 @@
 :root {
   font-size: 1em;
 }
-html, body, .main  {
-  height: 100%;
-}
+
 body {
   font-family: Montserrat, sans-serif;
 }
@@ -14,7 +12,7 @@ body {
 }
 
 .hero {
-  height: 100%;
+  height: 100vh;
   flex: 1 1 auto;
   background-image: url(bg-image.png);
   background-size: cover;
@@ -22,36 +20,30 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding-left: 20%;
+  padding-top: 20%;
 }
 
 .hero-inner {
-  font-size: 1rem;
+  font-size: calc(0.25rem + 1vw);
   color: white;
-  font-weight: 500;
   margin-right: 2em;
-  max-width: 300px;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 40.7em;
 }
 
-@media (min-width: 578px) {
+@media (max-width: 420px) {
   .hero-inner {
-    margin-right: 20%;
-    max-width: 350px;
+    font-size: 0.4rem;
   }
 
-  .heading h1 {
-    font-size: 3rem;
-  }
-
-  .feature-row  {
-    display: flex;
+  .hero {
+    padding-left: 1em;
   }
 }
-
-
 
 .heading {
   position: relative;
-  min-height: 100px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   display: flex;
@@ -62,7 +54,14 @@ body {
 
 .heading h1 {
   font-weight: bold;
+  font-size: 6.25em;
+  line-height: 1.2;
 }
+
+.hero-inner p {
+  font-size: 1.875em;
+}
+
 .heading .outline {
   position: absolute;
   -webkit-text-stroke: 10px black;
@@ -72,11 +71,22 @@ body {
   position: absolute;
   -webkit-text-fill-color: white;
 }
-.orange {-webkit-text-fill-color: #ff4301;}
+@media (min-width: 578px) {
+  .feature-row {
+    display: flex;
+  }
+}
+.orange {
+  -webkit-text-fill-color: #ff4301;
+}
+
 .btn-error {
   border-radius: 0.75em;
   background-color: #ff4301;
   margin-left: 20%;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
 }
 
 .btn-error:hover {
@@ -84,14 +94,15 @@ body {
 }
 
 .btn-error a {
-  padding: 0.5em 1em;
+  /* width: 15.375em;
+  height: 4.625em; */
+  font-size: 1.875em;
   font-weight: bold;
-  font-size: 1em;
   color: white;
   text-decoration: none;
 }
 
-.feature-row  {
+.feature-row {
   display: none;
 }
 
@@ -101,7 +112,7 @@ body {
 }
 
 @media (min-width: 578px) {
-  .feature-row  {
+  .feature-row {
     display: flex;
   }
 }
