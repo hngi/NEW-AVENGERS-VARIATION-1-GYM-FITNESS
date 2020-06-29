@@ -7,14 +7,6 @@ const inches = document.getElementById("inches");
 const result = document.getElementById("result");
 
 function metricSystem() {
-  if (kilogram.value != "" && centimeters.value != "") {
-    let kiloValue = kilogram.value;
-    let centiValue = centimeters.value;
-    let metricBmi = (kiloValue / Math.pow(centiValue, 2)) * 10000;
-    console.log(metricBmi);
-    result.value = metricBmi.toFixed(2);
-  }
-
   let feetValue = Number(feet.value);
   let incheValue = Number(inches.value);
   let poundValue = pounds.value;
