@@ -13,7 +13,7 @@ function metricSystem() {
     let metricBmi = (kiloValue / Math.pow(centiValue, 2)) * 10000;
     console.log(metricBmi);
     result.value = metricBmi.toFixed(2);
-  }
+ }
 
   let feetValue = Number(feet.value);
   let incheValue = Number(inches.value);
