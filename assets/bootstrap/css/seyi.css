@@ -9,7 +9,7 @@ h4, h5, h6{
 
 .facilities-header{
     min-height: 70vh;
-    background-image: url("./../s3-images/jonathan.png");
+    background-image: url("../s3-images/jonathan.png");
     color: #ffffff;
     background-position:center;
     background-size: cover;
