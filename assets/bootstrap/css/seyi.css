@@ -38,3 +38,29 @@ h4, h5, h6{
 .m-info, .v-info{
     background-color: #ffffff;
 }
+
+.icon-text h4{
+    color: #000000;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 698px) {
+    .about-us h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .m-n-v h2{
+        text-align: center;
+        font-size: 1.5em;    
+    }
+
+    p{
+        font-size: .8em;
+    }
+
+    h4{
+        text-align: center;
+        font-size: 1em; 
+    }
+}
