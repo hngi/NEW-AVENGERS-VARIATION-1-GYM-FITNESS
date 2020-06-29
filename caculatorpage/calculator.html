@@ -14,10 +14,10 @@
                 <div class="jumbo-text">
                     <p class="jumbo-colored pb-2">Calculate now</p>
                     <h2>Calculate your <br> BMI</h2>
-                    <p>BEFIT provides all kind of fitness training
+                    <p class="herop2">BEFIT provides all kind of fitness training
                         with modern instruments
                     </p>
-                    <a class="d-inline-block d-md-none mx-auto startbtn py-2 px-3 text-white" href="#start">START</a>
+                    <a class="d-inline-block d-md-none mx-auto startbtn py-3 px-4 text-white" href="#start">START</a>
                 </div>
             </div>
         </div>
@@ -32,37 +32,37 @@
                                     <h5>Height</h5>
                                     <div class="form-group">
                                         <label class="d-block m-0 pb-1">Feet</label>
-                                        <input class="form-control" type="number" name="feet">
+                                        <input class="form-control" type="number" id="feet">
                                     </div>
                                     <div class="form-group">
                                         <label class="d-block m-0 pb-1">Inches</label>
-                                        <input class="form-control" type="number" name="inches">
+                                        <input class="form-control" type="number" id="inches">
                                     </div>
                                     <div class="form-group">
                                         <label class="d-block m-0 pb-1">or Centimeters</label>
-                                        <input class="form-control" type="number" name="centimeters">
+                                        <input class="form-control" type="number" id="centimeters">
                                     </div>
                                 </div>
                                 <div class="p-2">
                                     <h5>Weight</h5>
                                     <div class="form-group">
                                         <label class="d-block m-0 pb-1">Pounds</label>
-                                        <input class="form-control" type="number" name="feet">
+                                        <input class="form-control" type="number" id="pounds">
                                     </div>
                                     <div class="form-group">
-                                        <label class="d-block m-0 pb-1">Kilogram</label>
-                                        <input class="form-control" type="number" name="inches">
+                                        <label class="d-block m-0 pb-1">or Kilogram</label>
+                                        <input class="form-control" type="number" id="kilogram">
                                     </div>
                                     <div class="form-group">
                                         <label class="d-block m-0 pb-1 font-weight-bolder">Age</label>
-                                        <input class="form-control" type="number" name="age">
+                                        <input class="form-control" type="number" id="age">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="d-flex calcbtn p-2">
                                 <div class="mr-3">
-                                    <button class="btn w-100">Calculate</button>
+                                    <button id="calcbtn" class="btn w-100">Calculate</button>
                                 </div>
                                 <div class="mb-3 ml-4">
                                     <input class="w-100 form-control" type="number" id="result"
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-4 bmidetails pb-5 w-75 m-auto text-dark">
+                <div class="pt-4 bmidetails px-md-5 pb-5 text-dark">
                     <p>
                         Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in
                         meters.
@@ -118,6 +118,7 @@
                 </div>
             </div>
         </section>
+        <script src="./calculator.js"></script>
         <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
