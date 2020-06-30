@@ -1,7 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  margin: 0;
 }
+footer {
+  display: block;
+}
+
+.ff {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/*header*/
+/*desktop nav section*/
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  margin: 0;
+}
+
+.nav-img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav {
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 0;
+
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red 20%, black 20%);
+  background-size: cover;
+  color: white;
+}
+
+.navigation,
+.navigation a {
+  display: flex;
+  list-style: none;
+  padding: 0 2.188rem;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+.topimg {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-name {
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 0 0 0 60px;
+}
+
+.wrapper {
+  margin-top: 10px;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+/*desktop nav ends*/
+/*mobile nav starts*/
+.hide-mobile-nav {
+  display: block;
+}
+
+.guy {
+  position: relative;
+}
+
+.hj {
+  background: linear-gradient(45deg, red 30%, black 30%);
+  background-size: cover;
+}
+
+#navicon {
+  height: 15px;
+  float: right;
+}
+
+.company-name-mobile {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 10px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.nav-bg {
+  background: #000000;
+}
+
+.mobile-nav,
+.mobile-nav li a {
+  display: grid;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 20px;
+
+  align-items: center;
+
+  color: #ffffff;
+}
+/*mobile nav ends*/
+
+/*footer*/
+
 .main-wrapper {
   position: relative;
 }

@@ -20,7 +20,63 @@
     />
     <link rel="stylesheet" href="./pricingPage.css" />
   </head>
+
+
   <body>
+
+    <!--  NAVBAR STARTS HERE -->
+		<header>
+			<!-- DESKTOP NAVBAR STARTS -->
+			<nav class="container-fluid topnav hide">
+				<div class="row wrapper">
+					<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+						<h1 class="company-name">BE<b id="bold">FIT</b></h1>
+					</div>
+					<div class="col-9 col-sm-9 col-md-9 col-lg-9">
+						<ul class="navigation">
+							<li><a href="">HOME</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">PAGES</a></li>
+							<li><a href="">OUR TEAM</a></li>
+							<li><a href="">ABOUT US</a></li>
+							<li><a href="">CONTACT</a></li>
+						</ul>
+					</div>	
+				</div>
+			</nav>
+			<!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+			<!-- MOBILE NAV STARTS -->
+			<div class="fixed-top guy hide-mobile-nav">
+			  <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+			    <div class="p-4 nav-bg">
+			      	<h5 class="text-white h4">
+			      		<ul class="mobile-nav">
+			      			<li>
+			      				<input class="form-control mr-sm-2" type="search" placeholder="Search Keyword" aria-label="Search">
+			      			</li>
+							<li><a href="">HOME</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">PAGES</a></li>
+							<li><a href="">OUR TEAM</a></li>
+							<li><a href="">ABOUT US</a></li>
+							<li><a href="">CONTACT</a></li>
+						</ul>
+			  		</h5>
+			    </div>
+			  </div>
+			  <nav class="navbar navbar-dark hj">
+			  	<h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class=""><img src="./images/navicon.svg" id="navicon"></span>
+			    </button>
+			  </nav>
+			</div>
+            <!-- MOBILE NAV ENDS -->
+
+    </header>
+    
+
     <div class="container-fluid p-0 main-wrapper">
       <img
         src="./images/Rectangle 32.png"
@@ -52,7 +108,7 @@
         </div>
       </div>
       <!------- cards -------->
-      <div class="row mt-5">
+      <div class="row mt-5 mb-3">
         <!---- First Card ---->
         <div class="col-lg-4">
           <div class="card" style="width: 30rem; box-shadow: 0 0 10px;">
@@ -263,6 +319,56 @@
         </div>
       </div>
     </div>
+
+    <!-- DESKTOP FOOTER STARTS -->
+		<footer class="foot hide">
+			<nav class="foot-nav">
+				<ul class="footnav">
+					<li class="companyname desk">BEFIT</li>
+					<li class="margin list"><a href="">HOME</a></li>
+					<li class="list"><a href="">TOUR</a></li>
+					<li class="list"><a href="">COOKIES POLICY</a></li>
+					<li class="list"><a href="">LEGAL TERMS</a></li>
+				</ul>
+				<hr id="hr">
+				<div class="socials">
+					<p class="slogn">THE BEST WAY TO BE HEALTHY</p>
+					<p class="socialicons margin">
+						<a href="#"><img class="m-0 p-0 px-2 margin" src="./images/instagram.svg" alt="instagram logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="./images/twitter.svg" alt="twitter logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="./images/facebook.svg" alt="facebook logo"></a>
+                  	</p>
+				</div>
+			</nav>
+		</footer>
+	<!--  DESKTOP FOOTER ENDS -->
+
+	<!-- MOBILE FOOTER STARTS -->
+		<footer class="mobile-foot hd">
+			<div><h1 class="companyname">BEFIT</h1></div>
+			<div>
+				<ul class="mobilenav">
+					<li><a href="">HOME</a></li>
+					<li><a href="">TOUR</a></li>
+					<li><a href="">COKIES POLICY</a></li>
+					<li><a href="">LEGAL TERMS</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="mobilenav">
+					<li class="">THE BEST WAY TO BE HEALTHY</li>
+					<li>
+						<p class="socialicons margin">
+							<a href="#"><img class="m-0 p-0 px-2 margin" src="./images/instagram.svg" alt="instagram logo"></a>
+	                        <a href="#"><img class="m-0 p-0 px-2" src="./images/twitter.svg" alt="twitter logo"></a>
+	                        <a href="#"><img class="m-0 p-0 px-2" src="./images/facebook.svg" alt="pinterest logo"></a>
+                  		</p>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	<!-- MOBILE FOOTER ENDS -->
+
     <!--- Modal  ----->
     <div
       class="modal fade"
