@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
+    <!-- ADD YOUR CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" href="./assets/bootstrap/css/contact.css" />
     <link
       rel="stylesheet"
@@ -17,7 +23,69 @@
     <title>Contact</title>
   </head>
   <body>
-    
+    <!--  NAVBAR STARTS HERE -->
+    <header>
+      <!-- DESKTOP NAVBAR STARTS -->
+      <nav class="container-fluid topnav hide">
+        <div class="row wrapper">
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+            <h1 class="company-name">BE<b id="bold">FIT</b></h1>
+          </div>
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+            <ul class="navigation">
+              <li><a href="landing.html">HOME</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">PAGES</a></li>
+              <li><a href="">OUR TEAM</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+      <!-- MOBILE NAV STARTS -->
+      <div class="fixed-top guy hide-mobile-nav">
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <div class="p-4 nav-bg">
+            <h5 class="text-white h4">
+              <ul class="mobile-nav">
+                <li>
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search Keyword"
+                    aria-label="Search"
+                  />
+                </li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PAGES</a></li>
+                <li><a href="">OUR TEAM</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+              </ul>
+            </h5>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark hj">
+          <h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""><img src="images/navicon.svg" id="navicon" /></span>
+          </button>
+        </nav>
+      </div>
+      <!-- MOBILE NAV ENDS -->
+    </header>
     <!-- Contact Us start -->
     <section class="contact bg_grey">
       <div class="container-fluid">
@@ -27,7 +95,7 @@
               <img
                 src="./images/We Are Just a Step Closer.png"
                 alt="img"
-                class="img-fluid"
+                class="img-fluid img_1"
               />
               <img
                 src="./images/content.png"
@@ -50,7 +118,7 @@
             <h4 class="mb-3">
               Contact Us
             </h4>
-            <h5 class="hide">Find Us and Connect</h5>
+            <h5 class="hide_1">Find Us and Connect</h5>
             <h5 class="know_more text-center">
               Know More About Our History
             </h5>
@@ -118,10 +186,102 @@
     <section class="map">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12 mt-4 map_img"></div>
+          <div class="col-sm-12 mt-4 mb-4 map_img"></div>
         </div>
       </div>
     </section>
     <!-- Contact Us end -->
+
+    <!-- DESKTOP FOOTER STARTS -->
+    <footer class="foot hide">
+      <nav class="foot-nav">
+        <ul class="footnav">
+          <li class="companyname desk">BEFIT</li>
+          <li class="margin list"><a href=""></a>HOME</li>
+          <li class="list"><a href=""></a>TOUR</li>
+          <li class="list"><a href=""></a>COOKIES POLICY</li>
+          <li class="list"><a href=""></a>LEGAL TERMS</li>
+        </ul>
+        <hr id="hr" />
+        <div class="socials">
+          <p class="slogn">THE BEST WAY TO BE HEALTHY</p>
+          <p class="socialicons margin">
+            <a href="#"
+              ><img
+                class="m-0 p-0 px-2 margin"
+                src="images/instagram.svg"
+                alt="instagram logo"
+            /></a>
+            <a href="#"
+              ><img
+                class="m-0 p-0 px-2"
+                src="images/twitter.svg"
+                alt="twitter logo"
+            /></a>
+            <a href="#"
+              ><img
+                class="m-0 p-0 px-2"
+                src="images/facebook.svg"
+                alt="pinterest logo"
+            /></a>
+          </p>
+        </div>
+      </nav>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- MOBILE FOOTER STARTS -->
+    <footer class="mobile-foot hd">
+      <div><h1 class="companyname">BEFIT</h1></div>
+      <div>
+        <ul class="mobilenav">
+          <li><a href=""></a>HOME</li>
+          <li><a href=""></a>TOUR</li>
+          <li><a href=""></a>COKIES POLICY</li>
+          <li><a href=""></a>LEGAL TERMS</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobilenav">
+          <li class="">THE BEST WAY TO BE HEALTHY</li>
+          <li>
+            <p class="socialicons margin">
+              <a href="#"
+                ><img
+                  class="m-0 p-0 px-2 margin"
+                  src="images/instagram.svg"
+                  alt="instagram logo"
+              /></a>
+              <a href="#"
+                ><img
+                  class="m-0 p-0 px-2"
+                  src="images/twitter.svg"
+                  alt="twitter logo"
+              /></a>
+              <a href="#"
+                ><img
+                  class="m-0 p-0 px-2"
+                  src="images/facebook.svg"
+                  alt="pinterest logo"
+              /></a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- MOBILE FOOTER ENDS -->
+
+    <!-- Script start -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script end -->
   </body>
 </html>
