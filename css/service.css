@@ -1,7 +1,8 @@
 
 body{
   margin: 0;
-  padding:0
+  padding:0;
+  transition: all 0.5s ease-in-out
 }
 #rectangle3 {
   width: 100%;
@@ -19,7 +20,12 @@ body{
 }
 .item{
   position: relative;
+  padding:0;
+  width:30%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .item-text{
   position: absolute;
 height: 60px;
@@ -29,20 +35,23 @@ transform: translateX(-50%);
 font-family: Montserrat;
 font-style: normal;
 font-weight:bolder;
-font-size: 4vw;
+font-size: 2.5vw;
 color: #FFFFFF;
-line-height: 3.5vw;
+line-height: 3vw;
 text-align: center;
+transition: all 0.5s ease-in-out
 }
 .prog{
   font-size:3vw;
   font-weight: bolder;
-  color:#ff4301;
   line-height: 3vw
 }
 .item-text p{
   font-size: 1vw;
   line-height: 1vw;
+  margin-top: 10px;
+  font-weight: normal;
+  color:white !important
 }
 .center {
   font-weight: bolder;
@@ -105,7 +114,7 @@ line-height: 88px;
 
 color: #FFFFFF;
 }
-#hr {
+.horizontal {
 position: absolute;
 width: 186px;
 height: 3px;
@@ -121,7 +130,6 @@ background-color: #FF4301
 .main-text{
   background-color: rgba(0, 0, 0, 0.822);
   position: relative;
-  z-index: 3;
   width:50%;
   height:50vw;
 }
@@ -134,12 +142,36 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.big{
+  font-size: 2.5vw
+}
+.hidden{
+  visibility: hidden;
+}
+.overlay{
+  transition: all 0.5s ease-in-out
+}
+.item:hover .overlay{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color: black;
+  opacity:0.7;
+  transition: all 0.5s ease-in-out;
+}
+.item:hover .item-text{
+  color:#FF4301;
+  transition: all 0.5s ease-in-out;
+}
+.item:hover .hidden{
+  visibility: visible;
+}
+.item:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+}
 /* small screen */
 @media only screen  and (max-width:576px){
-  p{
-    font-size:14px
-}
   #grad1{
     height:377px;
 }
@@ -159,6 +191,9 @@ font-size: 11px;
 
 color: #FF4301;
 }
+.item{
+  width: 100%;
+}
 .main-text p{
 position: absolute;
 width: 137px;
@@ -177,7 +212,7 @@ color: #FFFFFF;
   }
 .item-text{
     position: absolute;
-    top: 55%;
+    top: 60%;
     left:50%;
     color:white;
     font-size:6vw;
@@ -200,7 +235,7 @@ line-height: 22px;
 /* identical to box height */
 color: #FFFFFF;
 }
-  #hr{
+  .horizontal{
     position: absolute;
   width: 150px;
   height: 1px;
@@ -243,25 +278,25 @@ color: #FFFFFF;
 @media only screen  and (min-width:600px){
   @media only screen  and (max-width:700px){
     .item-text p{
-    font-size: 4.5vw;
-    line-height: 4vw;
+    font-size: 1vw;
+    line-height: 1vw;
     font-weight: normal
   }
   .prog{
-    font-size:8vw;
+    font-size:3vw;
     font-weight: bolder;
     color:#ff4301;
-    line-height: 5.5vw
+    line-height: 2.5vw
   }
   .item-text{
     position: absolute;
     top: 60%;
     left:50%;
     color:white;
-    font-size:9vw;
+    font-size:3vw;
     transform: translateX(-50%);
     font-weight: bolder;
-    line-height: 7vw
+    line-height: 3vw
 }
 .main-text p{
   line-height: 14px;
@@ -272,3 +307,4 @@ color: #FFFFFF;
 }
   
 }
+
