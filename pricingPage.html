@@ -27,6 +27,8 @@
   </head>
   <body>
 
+    
+
     <!--  NAVBAR STARTS HERE -->
 		<header>
 			<!-- DESKTOP NAVBAR STARTS -->
@@ -79,7 +81,7 @@
 
 		</header>
 
-    <div class="main-wrapper">
+    <div class="container-fluid main-wrapper">
       <div class="cover-wrapper justify-content-center">
         <div class="center-text">
           <p class="text">
@@ -104,11 +106,12 @@
           </p>
         </div>
       </div>
+      <!------------- Price Section ----------------->
       <!------- cards -------->
-      <div class="row mt-5 mx-5">
+      <div class="d-flex justify-content-around mt-5 cfnt">
         <!---- First Card ---->
-        <div class="col">
-          <div class="card" style="width: 30rem; box-shadow: 0 0 10px;">
+        <div>
+          <div class="card" style="width: 20rem; box-shadow: 0 0 10px;">
             <div
               class="row text-left"
               style="
@@ -178,8 +181,8 @@
           </div>
         </div>
         <!---- Second Card ---->
-        <div class="col-4">
-          <div class="card" style="width: 30rem; box-shadow: 0 0 10px;">
+        <div id="s-card">
+          <div class="card" style="width: 20rem; box-shadow: 0 0 10px;">
             <div
               class="row text-left"
               style="background-color: #ff4301; color: white; margin: 1.2px;"
@@ -244,14 +247,14 @@
           </div>
         </div>
         <!---- Third Card ---->
-        <div class="col-4">
-          <div class="card" style="width: 30rem; box-shadow: 0 0 10px;">
+        <div id="t-card">
+          <div class="card" style="width: 20rem; box-shadow: 0 0 10px;">
             <div
               class="row text-left"
               style="
                 background-color: #ff4301;
                 color: white;
-                width: 30rem;
+                width: 20rem;
                 margin: auto;
               "
             >
@@ -316,6 +319,9 @@
         </div>
       </div>
     </div>
+
+    
+  
     <!--- Modal  ----->
     <div
       class="modal fade"
@@ -369,6 +375,7 @@
             
                 
               </div>
+              
           <div class="modal-footer justify-content-center">
             <button
               type="button"
@@ -382,54 +389,9 @@
       </div>
     </div>
     </div>
-    <!-- DESKTOP FOOTER STARTS -->
-		<footer class="foot hide">
-			<nav class="foot-nav">
-				<ul class="footnav">
-					<li class="companyname desk">BEFIT</li>
-					<li class="margin list"><a href=""></a>HOME</li>
-					<li class="list"><a href=""></a>TOUR</li>
-					<li class="list"><a href=""></a>COOKIES POLICY</li>
-					<li class="list"><a href=""></a>LEGAL TERMS</li>
-				</ul>
-				<hr id="hr">
-				<div class="socials">
-					<p class="slogn">THE BEST WAY TO BE HEALTHY</p>
-					<p class="socialicons margin">
-						<a href="#"><img class="m-0 p-0 px-2 margin" src="./images/instagram.svg" alt="instagram logo"></a>
-                        <a href="#"><img class="m-0 p-0 px-2" src="./images/twitter.svg" alt="twitter logo"></a>
-                        <a href="#"><img class="m-0 p-0 px-2" src="./images/facebook.svg" alt="pinterest logo"></a>
-                  	</p>
-				</div>
-			</nav>
-		</footer>
-	<!-- FOOTER ENDS -->
+    
+    
 
-	<!-- MOBILE FOOTER STARTS -->
-		<footer class="mobile-foot hd">
-			<div><h1 class="companyname">BEFIT</h1></div>
-			<div>
-				<ul class="mobilenav">
-					<li><a href=""></a>HOME</li>
-					<li><a href=""></a>TOUR</li>
-					<li><a href=""></a>COKIES POLICY</li>
-					<li><a href=""></a>LEGAL TERMS</li>
-				</ul>
-			</div>
-			<div>
-				<ul class="mobilenav">
-					<li class="">THE BEST WAY TO BE HEALTHY</li>
-					<li>
-						<p class="socialicons margin">
-							<a href="#"><img class="m-0 p-0 px-2 margin" src="./images/instagram.svg" alt="instagram logo"></a>
-	                        <a href="#"><img class="m-0 p-0 px-2" src="./images/twitter.svg" alt="twitter logo"></a>
-	                        <a href="#"><img class="m-0 p-0 px-2" src="./images/facebook.svg" alt="pinterest logo"></a>
-                  		</p>
-					</li>
-				</ul>
-			</div>
-		</footer>
-	<!-- MOBILE FOOTER ENDS -->
 
   </body>
   <!-- Optional JavaScript -->
