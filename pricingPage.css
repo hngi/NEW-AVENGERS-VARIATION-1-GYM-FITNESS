@@ -271,6 +271,7 @@ main {
 
   .socialicons {
     padding-right: 1.25%;
+    display: flex;
   }
 
   .socials {
@@ -341,8 +342,8 @@ main {
   .cfnt {
     display: flex;
     flex-flow: column nowrap;
-    margin-left: 6%;
-    margin-right: auto;
+    width: 100%;
+    margin: 0;
   }
   #s-card {
     margin-bottom: 8%;
