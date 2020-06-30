@@ -33,8 +33,8 @@ a:hover{
 		font-family: 'Montserrat', sans-serif;
 		background-image: url("../images/landingcovermobile.svg");
 		background-repeat: no-repeat;
-		background-size: 100%;
-		height: 60vh;
+		background-size: cover;
+		height: 50vh;
 		color: #FFFFFF;
 		padding: 80px 20px 50px 20px;
 		width: 100%;
@@ -64,7 +64,7 @@ a:hover{
 	.card_s{
 		position: absolute;
 		z-index: 1;
-		top: 42%;
+		top: 48%;
 		width: 100%;
 		padding: 10px;
 		margin: 0;
@@ -147,7 +147,7 @@ a:hover{
 		font-style: normal;
 		font-weight: bold;
 		font-size: 18px;
-		line-height: 25px;
+		line-height: 30px;
 		color: #000000;
 		padding: 15px 0;
 
@@ -174,13 +174,13 @@ a:hover{
 	.services-intro{
 		display: grid;
 		width: 100%;
-		height: 30vh;
+		height: 10vh;
 		background-image: url("../images/services-intro.svg");
 		margin: 0;
 	}
 
 	.extra{
-		height: 20vh;
+		height: 10vh;
 	}
 
 	.services-introwrapper{
@@ -191,7 +191,12 @@ a:hover{
 	}
 
 	.introimg{
-		height: 40px;
+		height: 30px;
+	}
+
+	.subtitle2{
+		font-size: 8px;
+		color: white;
 	}
 
 	/*servives intro ends*/
@@ -211,7 +216,7 @@ a:hover{
 	.services{
 		background: #FBFAFB;
 		padding: 2.0%;
-		height: 60vh;
+		height: 50vh;
 
 	}
 
@@ -229,11 +234,15 @@ a:hover{
 		background-size:
 		200px, 205px;
 		background-repeat: no-repeat;
-		height: 60vh;
+		height: 50vh;
 	}
 
 	.sev-img{
 		height: 30px;
+	}
+
+	#special{
+		font-size: 16px;
 	}
 	/*services ends*/
 
@@ -272,6 +281,7 @@ a:hover{
 		color: #000000;
 
 	}
+
 
 	.cls{
 		display: flex;
@@ -548,6 +558,14 @@ a:hover{
 
 }
 
+@media all and (min-width: 420px){
+	/*more card responsiveness*/
+	.card_s{
+		top: 40%;
+	}
+
+}
+
 @media all and (min-width: 575px){
 	.pricing{
 		display: none;
@@ -566,7 +584,11 @@ a:hover{
 		display: block;
 	}
 }
-
+@media all and (min-width: 768px) and (orientation: landscape){
+	.cover{
+		padding: 200px;
+	}
+}
 @media all and (min-width: 768px){
 	/*cover section*/
 
@@ -577,7 +599,8 @@ a:hover{
 	.cover{
 		font-family: 'Montserrat', sans-serif;
 		background-image: url("../images/landingcover.svg");
-		height: 100%;
+		background-size: cover;
+		height: 50vh;
 		color: #FFFFFF;
 		padding: 100px;
 		width: 100%;
@@ -597,13 +620,13 @@ a:hover{
 	/*card section*/
 	.cards{
 		background-color: white;
-		height: 20vh;
+		height: 10vh;
 		width: 100%;
 		
 	}
 	.card_s{
 		position: absolute;
-		top: 45%;
+		top: 48%;
 		width: 100%;
 		padding: 10px;
 		margin: 0;
@@ -644,11 +667,11 @@ a:hover{
 
 	/*about section begins*/
 	.about{
-		height: 60vh;
+		height: 30vh;
 	}
 
 	.about-img{
-		height: 55vh;
+		height: 30vh;
 		width: 100%;
 	}
 
@@ -671,21 +694,22 @@ a:hover{
 	/*services start*/
 	.services{
 		padding: 4.8%;
-		height: 80vh;
+		height: 100%
 
 	}
+	
 
 	.services-img{
 		background-image:
 		 url("../images/servicescover1.svg"),
 		 url("../images/servicescover2.svg");
 		 background-position: 
-		 90% 50%,
-		 50% 2%;
+		 90% 10%,
+		 75% 2%;
 		background-size:
 		310px, 300px;
 		background-repeat: no-repeat;
-		height: 70vh;
+		height: 30vh;
 	}
 
 
@@ -694,7 +718,7 @@ a:hover{
 
 	/*gym class section starts*/
 	.Gymclass{
-		height: 60vh;
+		height: 100%;
 		padding: 50px 100px;
 	}
 
@@ -730,7 +754,7 @@ a:hover{
 	/*pricing starts*/
 	.pricing{
 		background: #FFFFFF;
-		height: 60vh;
+		height: 100%;
 	}
 
 	.background{
@@ -755,7 +779,7 @@ a:hover{
 
 	/*gallery section starts*/
 	.gallery{
-		height: 80vh;
+		height: 100%;
 	}
 	/*gallery section ends*/
 
@@ -814,6 +838,7 @@ a:hover{
 	.cover{
 		height: 90vh;
 		padding: 150px;
+		background-size: cover;
 	}
 
 	#slogan{
