@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" href="./calculator.css">
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+        <script src="../assets/font awsome/js/all.js"></script>
+        <link rel="stylesheet" href="../css/header-footer.css">
+    </head>
+    <body>
+        <!--  NAVBAR STARTS HERE -->
+        <header>
+            <!-- DESKTOP NAVBAR STARTS -->
+            <nav class="container-fluid topnav hide">
+                <div class="row wrapper">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                        <h1 class="company-name">BE<b id="bold">FIT</b></h1>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+                        <ul class="navigation">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">SERVICES</a></li>
+                            <li><a href="">PAGES</a></li>
+                            <li><a href="">OUR TEAM</a></li>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+            <!-- MOBILE NAV STARTS -->
+            <div class="fixed-top guy hide-mobile-nav">
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <div class="p-4 nav-bg">
+                        <h5 class="text-white h4">
+                            <ul class="mobile-nav">
+                                <li>
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search Keyword"
+                                        aria-label="Search">
+                                </li>
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">SERVICES</a></li>
+                                <li><a href="">PAGES</a></li>
+                                <li><a href="">OUR TEAM</a></li>
+                                <li><a href="">ABOUT US</a></li>
+                                <li><a href="">CONTACT</a></li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+                <nav class="navbar navbar-dark hj">
+                    <h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""><img src="../images/navicon.svg" id="navicon"></span>
+                    </button>
+                </nav>
+            </div>
+            <!-- MOBILE NAV ENDS -->
+
+        </header>
+
+        <div class="text-white jumbo-bg">
+            <div class="jumbo-wrapper">
+                <div class="jumbo-text">
+                    <p class="jumbo-colored pb-2">Calculate now</p>
+                    <h2>Calculate your <br> BMI</h2>
+                    <p class="herop2">BEFIT provides all kind of fitness training
+                        with modern instruments
+                    </p>
+                    <a class="d-inline-block d-md-none mx-auto startbtn py-3 px-4 text-white" href="#start">START</a>
+                </div>
+            </div>
+        </div>
+        <section class="w-100 sec text-white p-4 text-center">
+            <div class="mx-auto">
+                <div class="calculator-info mx-auto">
+                    <h3 id="start" class="p-3 font-weight-bold">BMI CALCULATOR</h3>
+                    <div class="d-lg-flex bmicalc w-100 text-left p-2">
+                        <div class="w-75 weightheightwrap">
+                            <div class="d-flex weightheight w-100">
+                                <div class="p-2">
+                                    <h5>Height</h5>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1">Feet</label>
+                                        <input class="form-control" type="number" id="feet">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1">Inches</label>
+                                        <input class="form-control" type="number" id="inches">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1">or Centimeters</label>
+                                        <input class="form-control" type="number" id="centimeters">
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <h5>Weight</h5>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1">Pounds</label>
+                                        <input class="form-control" type="number" id="pounds">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1">or Kilogram</label>
+                                        <input class="form-control" type="number" id="kilogram">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-block m-0 pb-1 font-weight-bolder">Age</label>
+                                        <input class="form-control" type="number" id="age">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex calcbtn p-2">
+                                <div class="mr-3">
+                                    <button id="calcbtn" class="btn w-100">Calculate</button>
+                                </div>
+                                <div class="mb-3 ml-4">
+                                    <input class="w-100 form-control" type="number" id="result"
+                                        placeholder="Result">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="ml-1 mt-lg-2 mx-auto tablewrap d-flex justify-content-center align-items-center">
+                            <table class="table text-white table-bordered">
+                                <thead>
+                                    <tr class="text-center">
+                                        <th scope="col" colspan="2">BMI categories</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Below 18.5</th>
+                                        <td>Underweight</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">18.5 - 24.9</th>
+                                        <td>Normal</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">25.0 - 29.9</th>
+                                        <td>Overweight</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">30.0 and above</th>
+                                        <td>Obese</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 bmidetails px-md-5 pb-5 text-dark">
+                    <p>
+                        Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in
+                        meters.
+                        A high
+                        BMI can be an indicator of high body fatness. BMI can be used to screen for weight categories
+                        that
+                        may
+                        lead to health problems but it is not diagnostic of the body fatness or health of an individual.
+                    </p>
+                </div>
+                <div class="img-show d-md-flex container mx-auto">
+                   <div> <img src="./calc-img/gympic1.png" alt="gym equipment"></div>
+                   <div> <img src="./calc-img/abpic2.png" alt="six packs"></div>
+                   <div> <img src="./calc-img/liftweightpic3.png" alt="weight lifting"></div>
+                </div>
+            </div>
+        </section>
+        	<!-- DESKTOP FOOTER STARTS -->
+        	<footer class="foot hide">
+        	    <nav class="foot-nav">
+        	        <ul class="footnav">
+        	            <li class="companyname desk">BEFIT</li>
+        	            <li class="margin list"><a href=""></a>HOME</li>
+        	            <li class="list"><a href=""></a>TOUR</li>
+        	            <li class="list"><a href=""></a>COOKIES POLICY</li>
+        	            <li class="list"><a href=""></a>LEGAL TERMS</li>
+        	        </ul>
+        	        <hr id="hr">
+        	        <div class="socials">
+        	            <p class="slogn">THE BEST WAY TO BE HEALTHY</p>
+        	            <p class="socialicons margin">
+        	                <a href="#"><img class="m-0 p-0 px-2 margin" src="../images/instagram.svg"
+        	                        alt="instagram logo"></a>
+        	                <a href="#"><img class="m-0 p-0 px-2" src="../images/twitter.svg" alt="twitter logo"></a>
+        	                <a href="#"><img class="m-0 p-0 px-2" src="../images/facebook.svg" alt="pinterest logo"></a>
+        	            </p>
+        	        </div>
+        	    </nav>
+        	</footer>
+        	<!-- FOOTER ENDS -->
+
+        	<!-- MOBILE FOOTER STARTS -->
+        	<footer class="mobile-foot hd">
+        	    <div>
+        	        <h1 class="companyname">BEFIT</h1>
+        	    </div>
+        	    <div>
+        	        <ul class="mobilenav">
+        	            <li><a href=""></a>HOME</li>
+        	            <li><a href=""></a>TOUR</li>
+        	            <li><a href=""></a>COKIES POLICY</li>
+        	            <li><a href=""></a>LEGAL TERMS</li>
+        	        </ul>
+        	    </div>
+        	    <div>
+        	        <ul class="mobilenav">
+        	            <li class="">THE BEST WAY TO BE HEALTHY</li>
+        	            <li>
+        	                <p class="socialicons margin">
+        	                    <a href="#"><img class="m-0 p-0 px-2 margin" src="../images/instagram.svg"
+        	                            alt="instagram logo"></a>
+        	                    <a href="#"><img class="m-0 p-0 px-2" src="../images/twitter.svg" alt="twitter logo"></a>
+        	                    <a href="#"><img class="m-0 p-0 px-2" src="../images/facebook.svg" alt="pinterest logo"></a>
+        	                </p>
+        	            </li>
+        	        </ul>
+        	    </div>
+        	</footer>
+        	<!-- MOBILE FOOTER ENDS -->
+        <script src="./calculator.js"></script>
+        <script src="../assets/jquery/jquery-3.5.1.min.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

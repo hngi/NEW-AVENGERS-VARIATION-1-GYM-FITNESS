@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4, h5, h6{
+    color: #ff4301;
+}
+
+.image-header{
+    min-height: 100vh;
+    color: #ffffff;
+    background-position:center;
+    background-size: cover;
+}
+
+.sub-info h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+.header p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.h-info{
+    background: linear-gradient( rgba( 79, 79, 79, 0.4), rgba(0, 0, 0, 0.75));
+    min-height: 100vh;
+}
+
+.sub-info{
+    max-width: 20em;
+}
+
+.about-us h1{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.about-us h4{
+    font-size: 20px;
+}
+
+.about-us p{
+    font-size: 16px;
+}
+
+.title{
+    color: #ffffff;
+}
+
+.col-half-offset{
+    margin: 1.266666667%;
+}
+
+.m-n-v{
+    background-color: #000000;
+}
+
+.m-n-v h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.m-info, .v-info{
+    background-color: #ffffff;
+}
+
+.choose h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.choose h4{
+    font-size: 20px;
+}
+
+.choose p{
+    font-size: 16px;
+}
+
+.icon-text p{
+    /* color: #000000; */
+    font-size: 1em;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 798px) {
+    .image-header{
+        min-height: 70vh;
+    }
+    .h-info{
+        min-height: 70vh;
+    }
+    .about-us h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .topnav{
+        display: none;
+    }
+
+    .about-us p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .choose h1{
+        text-align: center;
+    }
+
+    .m-n-v h2{
+        text-align: center;
+        font-size: 1.5em;    
+    }
+
+    .m-n-v h4{
+        text-align: left;
+    }
+
+    p{
+        font-size: .8em;
+    }
+
+    h4{
+        text-align: center;
+        font-size: 1em; 
+    }
+}
