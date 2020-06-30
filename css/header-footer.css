@@ -175,11 +175,17 @@ main{
 
 }
 
+.mobilenav li a{
+    color: #FFFFFF;
+}
+
 .companyname{
     font-family: 'Podkova', serif;
     font-size: 1.563rem;
     color: #FF4301;
 }
+
+
 
 
 /* TABLET AND OTHER BIG SCREENS RESPONSIVENESS */
