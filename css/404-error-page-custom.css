@@ -14,7 +14,7 @@ body {
 .hero {
   height: 100vh;
   flex: 1 1 auto;
-  background-image: url(bg-image.png);
+  background-image: url(../images/error-page/bg-image.png);
   background-size: cover;
   display: flex;
   align-items: center;
