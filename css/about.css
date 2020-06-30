@@ -9,7 +9,7 @@ h4, h5, h6{
 }
 
 .image-header{
-    min-height: 70vh;
+    min-height: 100vh;
     color: #ffffff;
     background-position:center;
     background-size: cover;
@@ -18,7 +18,7 @@ h4, h5, h6{
 .sub-info h1{
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 58px;
 }
 
@@ -31,7 +31,7 @@ h4, h5, h6{
 
 .h-info{
     background: linear-gradient( rgba( 79, 79, 79, 0.4), rgba(0, 0, 0, 0.75));
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .sub-info{
@@ -92,6 +92,12 @@ h4, h5, h6{
 }
 
 @media only screen and (max-width: 798px) {
+    .image-header{
+        min-height: 70vh;
+    }
+    .h-info{
+        min-height: 70vh;
+    }
     .about-us h1{
         text-align: center;
         font-size: 1.5em;
