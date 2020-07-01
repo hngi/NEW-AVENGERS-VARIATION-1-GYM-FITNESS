@@ -178,14 +178,14 @@ img {
 .main-text h2{
 position: absolute;
 height: 28px;
-left: 50%;
+left: 56%;
 transform: translateX(-50%);
 top: 18%;
-width: 130px;
+width: 170px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
-font-size: 11px;
+font-size: 10px;
 /* identical to box height, or 560% */
 
 
@@ -239,14 +239,13 @@ color: #FFFFFF;
     position: absolute;
   width: 150px;
   height: 1px;
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   top: 22%;
 }
 .prog{
   font-size:7vw;
   font-weight: bolder;
-  color:#ff4301;
   line-height: 5vw
 }
   .flex{
@@ -285,7 +284,6 @@ color: #FFFFFF;
   .prog{
     font-size:3vw;
     font-weight: bolder;
-    color:#ff4301;
     line-height: 2.5vw
   }
   .item-text{
@@ -302,6 +300,21 @@ color: #FFFFFF;
   line-height: 14px;
   font-size:2vw;
   margin-top: 10px;
+}
+.item-text{
+  position: absolute;
+height: 60px;
+left: 50%;
+top: 60%;
+transform: translateX(-50%);
+font-family: Montserrat;
+font-style: normal;
+font-weight:bolder;
+font-size: 2vw;
+color: #FFFFFF;
+line-height: 2vw;
+text-align: center;
+transition: all 0.5s ease-in-out
 }
 
 }
