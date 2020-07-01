@@ -2,16 +2,16 @@
 body{
   margin: 0;
   padding:0;
-  transition: all 0.5s ease-in-out;
   font-family: "Montserrat";
 }
 #rectangle3 {
   width: 100%;
 }
 
-#services {
+#services h2 {
   text-align: center;
   color: #ff4301;
+  font-weight: bold
 }
 
 #rectangle7 {
@@ -36,11 +36,16 @@ body{
   font-family: "Montserrat";
   font-style: normal;
   font-weight:bolder;
-  font-size: 2vw;
+  font-size: 3vw;
   color: #FFFFFF;
   line-height: 3vw;
   text-align: center;
-  transition: all 0.5s ease-in-out
+  transition: all 0.1s ease-in-out
+}
+.item:hover .item-text{
+  font-size: 2vw;
+  line-height: 2vw;
+  transition: all 0.3s ease-in-out
 }
 .item-text p{
   font-size: 1vw;
@@ -149,14 +154,18 @@ img {
 }
 .item:hover .item-text{
   color:#FF4301;
-  transition: all 0.5s ease-in-out;
 }
 .item:hover .hidden{
   visibility: visible;
+  transition: all 0.2s ease-in-out
 }
 .item:hover{
   transform: scale(1.04);
   transition: all 0.5s ease-in-out;
+}
+.ico{
+  margin-top: 3vw;
+  margin-bottom:5vw;
 }
 /* small screen */
 @media only screen  and (max-width:576px){
@@ -166,32 +175,42 @@ img {
 .main-text h2{
   position: absolute;
   height: 28px;
-  left: 51.5%;
+  left: 51%;
   transform: translateX(-50%);
   top: 18%;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
 /* identical to box height, or 560% */
 color: #FF4301;
 }
 .item{
   width: 100%;
 }
+#services h2 {
+  display: none
+}
+
 .main-text p{
   position: absolute;
   height: 18px;
   left: 50%;
   top: 52%;
+  width: 50%;
   transform: translateX(-50%);
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
-  line-height: 10px;
+  font-size: 1.8vw;
+  line-height: 8px;
   text-align: center;
   color: #FFFFFF;
+  }
+  .item:hover .item-text{
+    font-size: 5vw;
+    line-height: 6vw;
+    transition: all 0.3s ease-in-out
   }
 .item-text{
   position: absolute;
@@ -199,9 +218,12 @@ color: #FF4301;
   left:50%;
   color:white;
   font-size:6vw;
-  line-height:5vw;
+  line-height:8vw;
   transform: translateX(-50%);
   font-weight: bolder
+}
+#rectangle7{
+  margin-bottom: 90px;
 }
 .main-text h3{
   position: absolute;
@@ -242,11 +264,11 @@ color: #FF4301;
 }
 .ico-inner{
   margin-left: -30px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .ico-inner-sm{
   margin-left: -5px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .item-text p{
   font-size: 2.5vw;
