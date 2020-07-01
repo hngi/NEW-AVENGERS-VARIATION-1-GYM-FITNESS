@@ -182,7 +182,12 @@ html {
 
     /* "OUR trainers text" */
     .train {
-        font-size: 5vw
+        font-size: 5vw;
+        color:black;;
+        margin-bottom: 40px
+    }
+    .horizontal{
+        display: none;
     }
 
     /* the trainers cards in stacked in columns on mobile */
