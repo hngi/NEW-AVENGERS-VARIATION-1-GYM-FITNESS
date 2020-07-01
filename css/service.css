@@ -2,7 +2,8 @@
 body{
   margin: 0;
   padding:0;
-  transition: all 0.5s ease-in-out
+  transition: all 0.5s ease-in-out;
+  font-family: "Montserrat";
 }
 #rectangle3 {
   width: 100%;
@@ -32,19 +33,14 @@ body{
   left: 50%;
   top: 60%;
   transform: translateX(-50%);
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight:bolder;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: #FFFFFF;
   line-height: 3vw;
   text-align: center;
   transition: all 0.5s ease-in-out
-}
-.prog{
-  font-size:3vw;
-  font-weight: bolder;
-  line-height: 3vw
 }
 .item-text p{
   font-size: 1vw;
@@ -135,13 +131,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-.big{
-  font-size: 2.6vw
-}
 .hidden{
   visibility: hidden;
   font-weight: normal;
-  width: 17vw;
+  width: 100%;
 }
 .overlay{
   transition: all 0.5s ease-in-out
@@ -233,11 +226,6 @@ color: #FF4301;
   transform: translateX(-50%);
   top: 22%;
 }
-.prog{
-  font-size:7vw;
-  font-weight: bolder;
-  line-height: 5vw
-}
 .flex{
   flex-direction: column-reverse;
 }
@@ -253,10 +241,12 @@ color: #FF4301;
   padding-left:35%;
 }
 .ico-inner{
-  margin-left: -30px
+  margin-left: -30px;
+  margin-bottom: 30px;
 }
 .ico-inner-sm{
-  margin-left: -5px
+  margin-left: -5px;
+  margin-bottom: 30px;
 }
 .item-text p{
   font-size: 2.5vw;
@@ -278,21 +268,6 @@ color: #FF4301;
   line-height: 1vw;
   font-weight: normal
 }
-.prog{
-  font-size:3vw;
-  font-weight: bolder;
-  line-height: 2.5vw
-}
-.item-text{
-  position: absolute;
-  top: 60%;
-  left:50%;
-  color:white;
-  font-size:3vw;
-  transform: translateX(-50%);
-  font-weight: bolder;
-  line-height: 3vw
-}
 .main-text p{
   line-height: 14px;
   font-size:2vw;
@@ -304,20 +279,14 @@ color: #FF4301;
   left: 50%;
   top: 60%;
   transform: translateX(-50%);
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight:bolder;
-  font-size: 2.8vw;
+  font-size: 2vw;
   color: #FFFFFF;
   line-height: 2.5vw;
   text-align: center;
   transition: all 0.5s ease-in-out
-}
-
-}
-.big{
-  font-size: 2.8vw
   }
-  
+ }
 }
-
