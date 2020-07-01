@@ -92,7 +92,7 @@ font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 2vw;
-line-height: 24px;
+line-height: 27px;
 
 color: #FFFFFF;
 
@@ -143,7 +143,7 @@ img {
   height: auto;
 }
 .big{
-  font-size: 2.5vw
+  font-size: 2vw
 }
 .hidden{
   visibility: hidden;
