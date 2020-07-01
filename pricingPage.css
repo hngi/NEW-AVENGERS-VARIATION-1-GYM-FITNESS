@@ -342,8 +342,8 @@ main {
   .cfnt {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
-    margin: 0;
+    margin-left: 7%;
+    margin-right: auto;
   }
   #s-card {
     margin-bottom: 8%;
