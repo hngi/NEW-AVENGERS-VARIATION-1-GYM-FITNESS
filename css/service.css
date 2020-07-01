@@ -1,37 +1,9 @@
-body {
+
+body{
   margin: 0;
-  padding: 0;
-  transition: all 0.5s ease-in-out;
-  font-family: 'Montserrat';
+  padding:0;
+  transition: all 0.5s ease-in-out
 }
-
-.the__best {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  color: #FF4301;
-}
-
-.services__hero {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 88px;
-  color: #FFFFFF;
-}
-
-.services__paragraph {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px; 
-  color: #FFFFFF;
-}
-
 #rectangle3 {
   width: 100%;
 }
@@ -46,16 +18,15 @@ body {
   height: 15px;
   background-color: #ff4301;
 }
-
-.item {
+.item{
   position: relative;
-  padding: 0;
-  width: 30%;
+  padding:0;
+  width:30%;
   transition: all 0.5s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.item-text {
+.item-text{
   position: absolute;
   height: 60px;
   left: 50%;
@@ -63,77 +34,66 @@ body {
   transform: translateX(-50%);
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bolder;
+  font-weight:bolder;
   font-size: 2.5vw;
   color: #FFFFFF;
   line-height: 3vw;
   text-align: center;
   transition: all 0.5s ease-in-out
 }
-
-.prog {
-  font-size: 3vw;
+.prog{
+  font-size:3vw;
   font-weight: bolder;
   line-height: 3vw
 }
-
-.item-text p {
+.item-text p{
   font-size: 1vw;
   line-height: 1vw;
   margin-top: 10px;
   font-weight: normal;
-  color: white !important
+  color:white !important
 }
-
 .center {
   font-weight: bolder;
 }
-
 #grad1 {
   background: url("../images/Group\ 60.svg");
-  background-size: cover;
+  background-size:cover;
   height: 50vw;
   background-repeat: no-repeat;
-  padding: 0;
+  padding:0;
   background-position: center;
 }
-
-.main-text h2 {
+.main-text h2{
   position: absolute;
   width: 30vw;
   height: 28px;
   left: 20%;
   top: 30%;
-
+  
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 2vw;
   line-height: 28px;
   /* identical to box height, or 140% */
-
-
   color: #FF4301;
 }
-
-.main-text p {
+.main-text p{
   position: absolute;
   width: 30vw;
   height: 96px;
   left: 20%;
   top: 50%;
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 2vw;
-  line-height: 24px;
-
+  line-height: 28px;
   color: #FFFFFF;
 
 }
-
-.main-text h3 {
+.main-text h3{
   position: absolute;
   width: 308px;
   height: 88px;
@@ -145,232 +105,219 @@ body {
   font-weight: bold;
   font-size: 4vw;
   line-height: 88px;
-  /* identical to box height */
-
-
+/* identical to box height */
   color: #FFFFFF;
 }
-
 .horizontal {
   position: absolute;
-  width: 186px;
+  width: 16vw;
   height: 3px;
   left: 20%;
   top: 34%;
   background-color: #FF4301
 }
-
-.flex {
-  display: flex;
-  width: 100%;
+.flex{
+  display:flex;
+  width:100%;
   height: 100%;
 }
-
-.main-text {
+.main-text{
   background-color: rgba(0, 0, 0, 0.822);
   position: relative;
-  width: 50%;
-  height: 50vw;
+  width:50%;
+  height:50vw;
 }
-
-.empty {
-  width: 50%;
+.empty{
+  width:50%;
   position: relative;
-  z-index: 88
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-.big {
-  font-size: 2.5vw
+.big{
+  font-size: 2.6vw
 }
-
-.hidden {
+.hidden{
   visibility: hidden;
+  font-weight: normal;
+  width: 17vw;
 }
-
-.overlay {
+.overlay{
   transition: all 0.5s ease-in-out
 }
-
-.item:hover .overlay {
+.item:hover .overlay{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height:100%;
   background-color: black;
-  opacity: 0.7;
+  opacity:0.7;
   transition: all 0.5s ease-in-out;
 }
-
-.item:hover .item-text {
-  color: #FF4301;
+.item:hover .item-text{
+  color:#FF4301;
   transition: all 0.5s ease-in-out;
 }
-
-.item:hover .hidden {
+.item:hover .hidden{
   visibility: visible;
 }
-
-.item:hover {
+.item:hover{
   transform: scale(1.04);
   transition: all 0.5s ease-in-out;
 }
-
 /* small screen */
-@media only screen and (max-width:576px) {
-  #grad1 {
-    height: 377px;
+@media only screen  and (max-width:576px){
+  #grad1{
+  height:377px;
+}
+.main-text h2{
+  position: absolute;
+  height: 28px;
+  left: 51.5%;
+  transform: translateX(-50%);
+  top: 18%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vw;
+/* identical to box height, or 560% */
+color: #FF4301;
+}
+.item{
+  width: 100%;
+}
+.main-text p{
+  position: absolute;
+  height: 18px;
+  left: 50%;
+  top: 52%;
+  transform: translateX(-50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
   }
-
-  .main-text h2 {
-    position: absolute;
-    height: 28px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 18%;
-    width: 130px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    /* identical to box height, or 560% */
-
-
-    color: #FF4301;
-  }
-
-  .item {
-    width: 100%;
-  }
-
-  .main-text p {
-    position: absolute;
-    width: 137px;
-    height: 18px;
-    left: 50%;
-    top: 52%;
-    transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2vw;
-    line-height: 10px;
-    text-align: center;
-
-    color: #FFFFFF;
-  }
-
-  .item-text {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    color: white;
-    font-size: 6vw;
-    line-height: 5vw;
-    transform: translateX(-50%);
-    font-weight: bolder
-  }
-
-  .main-text h3 {
-    position: absolute;
-    width: 77px;
-    height: 22px;
-    left: 50%;
-    top: 37%;
-    transform: translateX(-50%);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    color: #FFFFFF;
-  }
-
-  .horizontal {
-    position: absolute;
-    width: 150px;
-    height: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 22%;
-  }
-
-  .prog {
-    font-size: 7vw;
-    font-weight: bolder;
-    color: #ff4301;
-    line-height: 5vw
-  }
-
-  .flex {
-    flex-direction: column-reverse;
-  }
-
-  .empty {
-    height: 257px;
-    width: 100%;
-  }
-
-  .main-text {
-    width: 100%;
-    height: 227px;
-  }
-
-  .ico {
-    padding-left: 35%;
-  }
-
-  .ico-inner {
-    margin-left: -30px
-  }
-
-  .ico-inner-sm {
-    margin-left: -5px
-  }
-
-  .item-text p {
-    font-size: 2.5vw;
-    line-height: 3vw;
-    font-weight: normal
-  }
+.item-text{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  color:white;
+  font-size:6vw;
+  line-height:5vw;
+  transform: translateX(-50%);
+  font-weight: bolder
+}
+.main-text h3{
+  position: absolute;
+  width: 77px;
+  height: 22px;
+  left: 51%;
+  top: 37%;
+  transform: translateX(-50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.horizontal{
+  position: absolute;
+  width: 137px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+}
+.prog{
+  font-size:7vw;
+  font-weight: bolder;
+  line-height: 5vw
+}
+.flex{
+  flex-direction: column-reverse;
+}
+.empty{
+  height:257px;
+  width: 100%;
+}
+.main-text{
+  width:100%;
+  height: 227px;
+}
+.ico{
+  padding-left:35%;
+}
+.ico-inner{
+  margin-left: -30px
+}
+.ico-inner-sm{
+  margin-left: -5px
+}
+.item-text p{
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-weight: normal
+}
+.hidden{
+  visibility: hidden;
+  font-weight: normal;
+  width: 45vw;
+ }
 }
 
-@media only screen and (min-width:600px) {
-  @media only screen and (max-width:700px) {
-    .item-text p {
-      font-size: 1vw;
-      line-height: 1vw;
-      font-weight: normal
-    }
-
-    .prog {
-      font-size: 3vw;
-      font-weight: bolder;
-      color: #ff4301;
-      line-height: 2.5vw
-    }
-
-    .item-text {
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      color: white;
-      font-size: 3vw;
-      transform: translateX(-50%);
-      font-weight: bolder;
-      line-height: 3vw
-    }
-
-    .main-text p {
-      line-height: 14px;
-      font-size: 2vw;
-      margin-top: 10px;
-    }
-
-  }
+/* Tablet Screen */
+@media only screen  and (min-width:600px){
+  @media only screen  and (max-width:992px){
+    .item-text p{
+  font-size: 1vw;
+  line-height: 1vw;
+  font-weight: normal
+}
+.prog{
+  font-size:3vw;
+  font-weight: bolder;
+  line-height: 2.5vw
+}
+.item-text{
+  position: absolute;
+  top: 60%;
+  left:50%;
+  color:white;
+  font-size:3vw;
+  transform: translateX(-50%);
+  font-weight: bolder;
+  line-height: 3vw
+}
+.main-text p{
+  line-height: 14px;
+  font-size:2vw;
+  margin-top: 10px;
+}
+.item-text{
+  position: absolute;
+  height: 60px;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight:bolder;
+  font-size: 2.8vw;
+  color: #FFFFFF;
+  line-height: 2.5vw;
+  text-align: center;
+  transition: all 0.5s ease-in-out
+}
 
 }
+.big{
+  font-size: 2.8vw
+  }
+  
+}
+
