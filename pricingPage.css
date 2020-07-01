@@ -145,9 +145,178 @@ main {
 /*mobile nav ends*/
 
 /*footer*/
+.mobile-foot {
+  display: grid;
+  height: 100vh;
+  background: #000000;
+  color: #ffffff;
+  justify-content: center;
+  padding: 2.5%;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.mobilenav,
+.mobilenav li {
+  text-decoration: none;
+  list-style: none;
+  padding: 12.5% 0 12.5% 0;
+  color: #ff4301;
+}
+
+.mobilenav li a {
+  color: #ffffff;
+}
+
+.companyname {
+  font-family: 'Podkova', serif;
+  font-size: 1.563rem;
+  color: #ff4301;
+}
+
+/* TABLET AND OTHER BIG SCREENS RESPONSIVENESS */
+@media only screen and (min-width: 768px) {
+  .topnav {
+    background: linear-gradient(45deg, red 20%, black 20%);
+    background-size: cover;
+  }
+  .hide-mobile-nav {
+    display: none;
+  }
+
+  .company-name {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 30px;
+    /*nav section ends*/
+  }
+
+  .navigation,
+  .navigation a {
+    display: flex;
+    list-style: none;
+    padding: 0 0.9rem;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  .hide {
+    display: block;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .hd {
+    display: none;
+  }
+
+  #hr {
+    background-color: #ffffff;
+    margin: 0 1.2%;
+  }
+
+  .foot {
+    display: grid;
+    background: #000000;
+    height: 100%;
+    padding: 4.2%;
+  }
+
+  .foot-nav {
+    align-items: center;
+  }
+
+  .footnav {
+    display: flex;
+    list-style: none;
+    padding: 0 3% 1% 0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .footnav a {
+    display: flex;
+    list-style: none;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  .companyname {
+    padding-left: 2.9%;
+  }
+
+  .desk {
+    font-size: 1.875rem;
+  }
+
+  .margin {
+    margin-left: auto;
+  }
+
+  .slogn {
+    color: #ffffff;
+    padding-left: 2.9%;
+    font: 0.85rem/1.5px 'Montserrat';
+    width: 50%;
+  }
+
+  .list {
+    padding: 0 20px;
+    font: 0.85rem/1.5px 'Montserrat';
+  }
+
+  .socialicons {
+    padding-right: 1.25%;
+  }
+
+  .socials {
+    padding: 2% 3% 0 0;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation,
+  .navigation a {
+    display: flex;
+    list-style: none;
+    padding: 0 1.7rem;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 12px;
+  }
+
+  .company-name {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: lighter;
+    margin-left: 60px;
+    /*nav section ends*/
+  }
+}
 
 .main-wrapper {
   position: relative;
+  background-image: url(./images/Rectangle32.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 489px;
 }
 .cover-wrapper {
   position: absolute;
@@ -162,24 +331,16 @@ main {
 .center-text {
   position: absolute;
   color: white;
-  top: 14rem;
-  left: 25rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
   justify-content: center;
   text-align: center;
+  margin-top: -4rem;
   z-index: 1;
 }
 .text {
   transform: rotate(180deg);
-}
-
-@media only screen and (max-width: 600px) {
-  .center-text {
-    position: absolute;
-    top: 12rem;
-    left: 2rem;
-    font-size: 2rem;
-    text-align: justify;
-  }
 }
 .button {
   background: white;
@@ -188,6 +349,7 @@ main {
   color: #ff4301;
   width: 239px;
   height: 47px;
+  font-size: 20px;
 }
 .button:hover {
   background: #ff4301;
@@ -214,4 +376,21 @@ input[type='password'] {
 }
 span {
   font-size: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .cfnt {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 0%;
+    padding-left: 1%;
+  }
+  #scard {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .center-text {
+    margin-top: -15rem;
+  }
 }
