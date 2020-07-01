@@ -947,7 +947,7 @@ a:hover{
 @media all and (min-width: 780px) and (min-height: 1322px) {
 	.card_s{
 		position: absolute;
-		top: 46%;
+		top: 47%;
 	}
 
 	.cards{
@@ -965,6 +965,10 @@ a:hover{
 
 	.cover{
 		padding-top: 300px;
+	}
+
+	.services{
+		height: 35vh;
 	}
 }
 

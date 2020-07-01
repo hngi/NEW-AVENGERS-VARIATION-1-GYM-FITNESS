@@ -302,6 +302,16 @@ main{
 
 }
 
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+    .list{
+        padding: 0px;
+    }
+
+    .px-2{
+       padding: 0px; 
+    }
+}
+
 @media only screen and (min-width: 992px){
    
 
