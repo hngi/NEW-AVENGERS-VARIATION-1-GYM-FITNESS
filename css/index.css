@@ -1431,6 +1431,13 @@ a:hover{
 	.subtitle{
 		font-size: 20px;
 	}
+	.orange{
+		padding: 10px 30px;
+	}
+
+	.grey{
+		padding: 10px 30px;
+	}
 
 }
 
