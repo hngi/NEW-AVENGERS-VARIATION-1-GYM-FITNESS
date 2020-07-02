@@ -1,3 +1,5 @@
+@import url("animate.css");
+
 *{
 	margin: 0;
 	padding: 0;
@@ -1376,7 +1378,7 @@ a:hover{
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 28px;
 	}
 
@@ -1459,9 +1461,5 @@ a:hover{
 .pricing:hover{
 	filter: saturate(100%);
 	transition-duration: 1s;
+	
 }
-
-
-
-
-
