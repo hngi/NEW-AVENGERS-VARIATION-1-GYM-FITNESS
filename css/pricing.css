@@ -449,3 +449,6 @@ span {
   font-size: large;
   font-weight: bold;
 }
+.margin-to-zero{
+  margin: 0;
+}
