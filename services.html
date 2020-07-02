@@ -7,24 +7,49 @@
   <title>services</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" type="text/css" href="css/header-footer.css">
-  <link rel="stylesheet" href="css/service.css" />
-  <link rel="icon" type="image/png" href="images/BEFIT.png" sizes="32X32">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/service.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <!--  NAVBAR STARTS HERE -->
+	<header>
 		<!-- DESKTOP NAVBAR STARTS -->
 		<nav class="container-fluid topnav hide">
-			<div class="row wrapper">
-				<div class="col-3 col-sm-3 col-md-3 col-lg-3">
-					<h1 class="company-name">BE<b id="bold">FIT</b></h1>
+				<div class="row wrapper">
+					<div class="col-3 col-sm-3 col-md-3 col-lg-3">
+						<h1 class="company-name">BE<b id="bold">FIT</b></h1>
+					</div>
+					<div class="col-9 col-sm-9 col-md-9 col-lg-9">
+						 <ul class="navigation">
+					<li><a href="./index.html">HOME</a></li>
+					<li><a href="./services.html">SERVICES</a></li>
+					<li><a href="./products.html">PRODUCTS</a></li>
+					<li><a href="./pricing.html">PLANS</a></li>
+					<li><a href="./calculator.html">BMI</a></li>
+					<li><a href="./error.html">4O4 ERROR</a></li>
+					<li><a href="./team.html">OUR TEAM</a></li>
+					<li><a href="./about.html">ABOUT US</a></li>
+					<li><a href="./contact.html">CONTACT</a></li>
+				</ul>
+					</div>
 				</div>
-				<div class="col-9 col-sm-9 col-md-9 col-lg-9">
-					<ul class="navigation">
-						<li><a href="./index.html">HOME</a></li>
-						<li><a href="./service.html">SERVICES</a></li>
+			</nav>
+		<!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+		<!-- MOBILE NAV STARTS -->
+		<div class="fixed-top guy hide-mobile-nav">
+			<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+				<div class="p-4 nav-bg">
+						<h5 class="text-white h4">
+							<ul class="mobile-nav">
+								<li>
+											<input class="form-control mr-sm-2" type="search" placeholder="Search Keyword" aria-label="Search">
+										</li>
+										<li><a href="./index.html">HOME</a></li>
+						<li><a href="./services.html">SERVICES</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
 								aria-haspopup="true" aria-expanded="false">
@@ -41,66 +66,34 @@
 						<li><a href="./about.html">ABOUT US</a></li>
 						<li><a href="./contact.html">CONTACT</a></li>
 					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- DESKTOP NAV NAVBAR ENDS HERE -->
-
-		<!-- MOBILE NAV STARTS -->
-		<div class="fixed-top guy hide-mobile-nav">
-			<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-				<div class="p-4 nav-bg">
-					<h5 class="text-white h4">
-						<ul class="mobile-nav">
-							<li>
-								<input class="form-control mr-sm-2" type="search" placeholder="Search Keyword" aria-label="Search">
-							</li>
-							<li><a href="./index.html">HOME</a></li>
-							<li><a href="./service.html">SERVICES</a></li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
-									PAGES
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item text-dark" href="./products.html">PROUCTS</a>
-									<a class="dropdown-item text-dark" href="./pricing.html">PLANS AND PRICING</a>
-									<a class="dropdown-item text-dark" href="./calculator.html">BMI</a>
-									<a class="dropdown-item text-dark" href="./error.html">4O4 ERROR</a>
-								</div>
-							</li>
-							<li><a href="./team.html">OUR TEAM</a></li>
-							<li><a href="./about.html">ABOUT US</a></li>
-							<li><a href="./contact.html">CONTACT</a></li>
-						</ul>
 					</h5>
 				</div>
 			</div>
 			<nav class="navbar navbar-dark hj">
 				<h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-					aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class=""><img src="./images/navicon.svg" id="navicon"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class=""><img src="images/navicon.svg" id="navicon"></span>
 				</button>
 			</nav>
 		</div>
-		<!-- MOBILE NAV ENDS -->
+					<!-- MOBILE NAV ENDS -->
 
-  </header>
+	</header>
+	<!-- header ends -->
 <!--  Service codes start here  --> 
 	
 <!--  hero Section starts	 -->
   <div id="grad1" class="container-fluid">
       <div class="flex">
           <div class="main-text">
-              <h2 text-center>
+              <h2 text-center class="best__way">
                 The best way to be healthy
               </h2>
               <hr class="horizontal">
               <h3>
                 Services
               </h3>
-              <p>
+              <p class="hero__text">
                 We also organise group programmes that enhance your fitness. We
                 also group our customers for the training session
               </p>
@@ -112,7 +105,7 @@
 <!-- Hero section Ends -->
 	
     <div id="services">
-      <h2 class="text-center my-5">Select services</h2>
+      <h2 class="text-center my-5 select__services">Select services</h2>
     </div>
 	
 <!-- Services Cards start	 -->
