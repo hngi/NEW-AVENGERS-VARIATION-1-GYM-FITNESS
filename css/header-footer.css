@@ -105,7 +105,7 @@ main{
 }
 
 .hj{
-    background: linear-gradient(45deg, rgb(255, 67, 1) 30%, black 30%);
+    background: linear-gradient(45deg, rgb(255, 67, 1) 20%, black 20%);
     background-size: cover;
 
 }
@@ -204,7 +204,7 @@ main{
 /* TABLET AND OTHER BIG SCREENS RESPONSIVENESS */
 @media only screen and (min-width: 768px){
     .topnav{
-        background: linear-gradient(45deg, rgb(255, 105, 52) 20%, black 20%);
+        background: linear-gradient(45deg, rgb(255, 67, 1) 20%, black 20%);
         background-size: cover;
     }
     .hide-mobile-nav{

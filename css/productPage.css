@@ -5,6 +5,14 @@ body {
     font-family: Montserrat
 }
 
+.mobilenav li a{
+    color: #FFFFFF;
+}
+.footnav a{
+            
+     color: #FFFFFF;
+}
+
 .containers {
     position: relative;
     text-align: center;
