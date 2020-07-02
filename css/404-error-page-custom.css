@@ -116,6 +116,17 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .btn-error  {
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+  .btn-error a {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+}
+
 .feature-row {
   display: none;
 }
