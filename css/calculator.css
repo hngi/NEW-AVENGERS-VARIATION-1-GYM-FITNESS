@@ -9,7 +9,7 @@ body {
   font-size: 16px !important;
   color: var(--black) !important;
   overflow-x: hidden;
-  font-family: var(--font-family), sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .jumbo-bg {
@@ -60,12 +60,29 @@ body {
   border-bottom: 1px solid #FF4301;
 }
 
-.jumbo-text p {
-  font-size: 1rem;
+.calculate__now {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF4301;
+}
+
+.calculate__bmi {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
 }
 
 .herop2 {
   text-shadow: 0px 0px #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .jumbo-text h2 {
@@ -91,6 +108,11 @@ body {
 
 .calculator-info h3 {
   color: var(--default-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FF4301;
 }
 
 .calculator-info h5 {
@@ -140,6 +162,13 @@ body {
 
 .bmidetails p {
   font-size: 1.1rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #333333;
 }
 
 .img-show div {

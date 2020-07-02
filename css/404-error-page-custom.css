@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat' !important;
 }
 
 .main {
@@ -82,7 +82,23 @@ body {
 
 .heading .outline {
   position: absolute;
-  -webkit-text-stroke: 10px black;
+}
+
+.outline h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 122px;
+  color: #FFFFFF;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sorry {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #FFFFFF;
 }
 
 .heading .text {
@@ -108,10 +124,10 @@ body {
 }
 
 .btn-error a {
-  /* width: 15.375em;
-  height: 4.625em; */
-  font-size: 1.875em;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
   color: white;
   text-decoration: none;
 }

@@ -1,141 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h4,
 h5,
 h6 {
-    color: #ff4301;
+  color: #ff4301;
 }
 
 .image-header {
-    min-height: 100vh;
-    color: #ffffff;
-    background-position: center;
-    background-size: cover;
+  min-height: 100vh;
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
 }
 
 .sub-info h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 58px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 78px;
+  color: #FFFFFF;
 }
 
 .header p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .h-info {
-    background: linear-gradient(rgba(79, 79, 79, 0.4), rgba(0, 0, 0, 0.75));
-    min-height: 100vh;
+  background: linear-gradient(rgba(79, 79, 79, 0.4), rgba(0, 0, 0, 0.75));
+  min-height: 100vh;
 }
 
 .sub-info {
-    max-width: 20em;
+  max-width: 20em;
 }
 
 .about-us h1 {
-    font-size: 36px;
-    font-weight: 800;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .about-us h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .about-us p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .col-half-offset {
-    margin: 1.266666667%;
+  margin: 1.266666667%;
 }
 
 .m-n-v {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .m-n-v h4 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .m-info,
 .v-info {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .choose h1 {
-    font-size: 36px;
-    font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .choose h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .choose p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .icon-text p {
-    /* color: #000000; */
-    font-size: 1em;
-    font-weight: 800;
+  /* color: #000000; */
+  font-size: 1em;
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 760px) {
-    .image-header {
-        min-height: 70vh;
-    }
+  .image-header {
+    min-height: 70vh;
+  }
 
-    .h-info {
-        min-height: 70vh;
-    }
+  .h-info {
+    min-height: 70vh;
+  }
 
-    .about-us h1 {
-        text-align: center;
-        font-size: 1.5em;
-    }
+  .about-us h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
 
-    .topnav {
-        display: none;
-    }
+  .topnav {
+    display: none;
+  }
 
-    .about-us p {
-        font-size: 16px;
-        text-align: center;
-    }
+  .about-us p {
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .choose h1 {
-        text-align: center;
-    }
+  .history__ p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #5B5B5B;
+  }
 
-    .m-n-v h2 {
-        text-align: center;
-        font-size: 1.5em;
-    }
+  .choose h1 {
+    text-align: center;
+  }
 
-    .m-n-v h4 {
-        text-align: left;
-    }
+  .m-n-v h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
 
-    p {
-        font-size: .8em;
-    }
+  .m-n-v h4 {
+    text-align: left;
+  }
 
-    h4 {
-        text-align: center;
-        font-size: 1em;
-    }
+  p {
+    font-size: .8em;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1em;
+  }
 }

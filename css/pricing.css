@@ -367,6 +367,38 @@ main {
   transform: rotate(180deg);
 }
 
+.lorem__ipsum {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.price__plan {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.choose__plan {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+}
+
+.pricing__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #828282;
+}
+
 .button {
   background: white;
   border: 1px solid #ff4301;
