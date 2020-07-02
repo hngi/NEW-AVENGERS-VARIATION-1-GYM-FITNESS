@@ -91,7 +91,7 @@ h4, h5, h6{
     font-weight: 800;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 760px) {
     .image-header{
         min-height: 70vh;
     }
