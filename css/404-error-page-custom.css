@@ -1,0 +1,137 @@
+:root {
+  font-size: 1em;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  height: 100vh;
+  flex: 1 1 auto;
+  background-image: url(../images/error-page/bg-image.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 20%;
+  padding-top: 20%;
+}
+
+.hero-inner {
+  font-size: calc(0.25rem + 1vw);
+  color: white;
+  margin-right: 2em;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 43em;
+}
+
+@media (max-width: 528px) {
+  .hero-inner {
+    font-size: calc(0.2rem + 1vw);
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-inner {
+    font-size: 0.4rem;
+  }
+
+  .hero {
+    padding-left: 1em;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-inner {
+    font-size: calc(0.2rem + 1vw);
+  }
+}
+
+@media (max-width: 300px) {
+  .hero-inner {
+    font-size: calc(0.1rem + 1vw);
+  }
+}
+
+.heading {
+  position: relative;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+  /* Fallback Color if text-stroke is not supported */
+  color: #ff4301;
+}
+
+.heading h1 {
+  font-weight: bold;
+  font-size: 6.25em;
+  line-height: 1.2;
+}
+
+.hero-inner p {
+  font-size: 1.875em;
+}
+
+.heading .outline {
+  position: absolute;
+  -webkit-text-stroke: 10px black;
+}
+
+.heading .text {
+  position: absolute;
+  -webkit-text-fill-color: white;
+}
+
+.orange {
+  -webkit-text-fill-color: #ff4301;
+}
+
+.btn-error {
+  border-radius: 0.75em;
+  background-color: #ff4301;
+  margin-left: 20%;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.btn-error:hover {
+  background-color: #ff4301aa;
+}
+
+.btn-error a {
+  /* width: 15.375em;
+  height: 4.625em; */
+  font-size: 1.875em;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.feature-row {
+  display: none;
+}
+
+.feature {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .feature-row {
+    display: flex;
+  }
+}
+
+.feature-icon {
+  width: 50%;
+  max-width: 70px;
+}

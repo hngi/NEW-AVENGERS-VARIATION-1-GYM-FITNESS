@@ -44,12 +44,12 @@ a:hover{
 
 	#slogan{
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1.875rem;
+		font-size: 1.575rem;
 	}
 
 	.covertext{
 		font: 1rem/1.5rem 'Montserrat', sans-serif;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		font-style: normal;
 		font-weight: normal;
 
@@ -58,44 +58,49 @@ a:hover{
 	/*card section*/
 	.cards{
 		background-color: white;
-		height: 45vh;
+		height: 70vh;
 		width: 100%;
 	}
 	.card_s{
 		position: absolute;
 		z-index: 1;
-		top: 48%;
+		top: 52%;
 		width: 100%;
-		padding: 10px;
+		padding: 2px;
 		margin: 0;
 	}
 	.card-body{
-		height: 225px;
+		height: 350px;
+		
 	}
 
 	.card{
-		height: 200px;
+		height: 100%;
 	}
 
 	.card-title{
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 	}
 
 	.card-text{
 		display: flex;
 		align-items: flex-end;
-		font-size: 0.8rem;
-		line-height: 1.5rem;
+		font-size: 0.6rem;
+		line-height: 1.1rem;
 	}
 
 	.grey{
 		background: #FBFAFB;
 		color: #000000;
+		height: 35vh;
+		
+
 	}
 
 	.orange{
 		background: #FF4301;
 		color: #FFFFFF;
+		height: 35vh;
 
 	}
 
@@ -121,7 +126,7 @@ a:hover{
 		padding: 0;
 		position: relative;
 		background: #FBFAFB;
-		height: 60vh;
+		height: 100%;
 	}
 
 	.about-img{
@@ -129,7 +134,7 @@ a:hover{
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 100%;
-		height: 50vh;
+		height: 60vh;
 
 	}
 
@@ -146,7 +151,7 @@ a:hover{
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 30px;
 		color: #000000;
 		padding: 15px 0;
@@ -158,14 +163,19 @@ a:hover{
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 15px;
+		font-size: 12px;
 		line-height: 22px;
 		color: #FF4301;
 
 	}
 
-	.about-text{
+	#aboutsubtitle{
 		font-size: 12px;
+		line-height: 1.3;
+	}
+	.about-text{
+		font-size: 10px;
+
 	}
 
 	/*about section ends*/
@@ -230,9 +240,9 @@ a:hover{
 		 url("../images/servicescover2.svg");
 		 background-position: 
 		 100% 12%,
-		 80% 0.1%;
+		 60% 0.1%;
 		background-size:
-		200px, 205px;
+		210px, 200px;
 		background-repeat: no-repeat;
 		height: 50vh;
 	}
@@ -532,11 +542,15 @@ a:hover{
 
 	}
 
+	.subtitle{
+		font-size: 20px;
+	}
+
 	.date{
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 28px;
 		color: #FFFFFF;
 	}
@@ -550,23 +564,96 @@ a:hover{
 		color: #FF4301;
 	}
 
-	.subtitle{
-		font-size: 20px;
-	}
+	
 	/*contact section ends*/
+	#maps{
+		width: 100%;
+		height: 100%;
+	}
 	
 
 }
 
 @media all and (min-width: 420px){
 	/*more card responsiveness*/
+
+	#slogan{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.875rem;
+	}
+
+	.covertext{
+		font: 1rem/1.5rem 'Montserrat', sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: normal;
+
+	}
+
+	.cards{
+		height: 45vh;
+	}
+
 	.card_s{
 		top: 40%;
+		padding: 10px;
+		margin: 0;
 	}
+
+	.about{
+		height: 60vh;
+	}
+
+	.about-img{
+		height: 50vh;
+	}
+
+	.about-content{
+		padding: 12px 20px;
+	}
+
+	.orange{
+		height: 25vh;
+	}
+
+	.grey{
+		height: 25vh;
+	}
+
+	.services{
+		height: 40vh;
+	}
+	/*map section*/
+	#maps{
+		width: 100%;
+		height: 100%;
+	}
+
+
 
 }
 
 @media all and (min-width: 575px){
+	.cards{
+		height: 50vh;
+	}
+
+	.card-title{
+		font-size: 15px;
+	}
+
+	.card-text{
+		font-size: 13px;
+	}
+
+	.grey{
+		padding: 20px 40px;
+	}
+
+	.orange{
+		padding: 20px 40px;
+	}
+
 	.pricing{
 		display: none;
 	}
@@ -583,13 +670,38 @@ a:hover{
 	.hide1{
 		display: block;
 	}
-}
-@media all and (min-width: 768px) and (orientation: landscape){
-	.cover{
-		padding: 200px;
+
+	.services{
+		height: 50vh;
 	}
 }
 @media all and (min-width: 768px){
+	.show{
+		display: none;
+	
+	}
+	.cards{
+		height: 20vh;
+	}
+	.orange{
+		height: 25vh;
+		padding: 10px;
+	}
+
+	.grey{
+		height: 25vh;
+		padding: 10px;
+	}
+
+	.services-img{
+		background-size: 315px, 300px;
+		background-position: 
+		100% 30%,
+		50% 10%;
+	}
+	
+}
+@media all and (min-width: 780px){
 	/*cover section*/
 
 	.hide{
@@ -620,13 +732,13 @@ a:hover{
 	/*card section*/
 	.cards{
 		background-color: white;
-		height: 10vh;
+		height: 30vh;
 		width: 100%;
 		
 	}
 	.card_s{
 		position: absolute;
-		top: 48%;
+		top: 42%;
 		width: 100%;
 		padding: 10px;
 		margin: 0;
@@ -646,11 +758,15 @@ a:hover{
 	.grey{
 		background: #FBFAFB;
 		color: #000000;
+		height: 30vh;
+		box-shadow: -2px 10px 10px 0px #E5E5E5;
 	}
 
 	.orange{
 		background: #FF4301;
 		color: #FFFFFF;
+		height: 30vh;
+		box-shadow: -2px 10px 10px 0px #E5E5E5;
 
 	}
 
@@ -667,11 +783,11 @@ a:hover{
 
 	/*about section begins*/
 	.about{
-		height: 30vh;
+		height: 40vh;
 	}
 
 	.about-img{
-		height: 30vh;
+		height: 38vh;
 		width: 100%;
 	}
 
@@ -828,6 +944,30 @@ a:hover{
 	
 }
 
+@media all and (min-width: 780px) and (min-height: 1322px) {
+	.card_s{
+		position: absolute;
+		top: 46%;
+	}
+
+	.cards{
+		height: 10vh;
+
+	}
+
+	.orange{
+		height: 11vh;
+	}
+
+	.grey{
+		height: 11vh;
+	}
+
+	.cover{
+		padding-top: 300px;
+	}
+}
+
 @media all and (min-width: 992px){
 
 
@@ -864,11 +1004,21 @@ a:hover{
 
 	.card_s{
 		position: absolute;
-		top: 75%;
+		top: 80%;
 	}
 
 	.card{
 		height: 300px;
+	}
+
+	.orange{
+		height: 30vh;
+		
+	}
+
+	.grey{
+		height: 30vh;
+
 	}
 	/*card section ends*/
 
@@ -985,6 +1135,58 @@ a:hover{
 		height: 90vh;
 		padding: 240px 150px;
 	}
+
+	.card-title{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 32px;
+
+	}
+
+	.card-text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.about-text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	#aboutsubtitle{
+		font-size: 20px;
+	}
+
+	.prog{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 28px;
+		color: #000000;
+
+	}
+
+	#special{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.mn{
+		margin: 20px 0px 16px;
+	}
+
 }
 
 /*BUTTONS*/
@@ -995,7 +1197,8 @@ a:hover{
 }
 
 .about-btn{
-	margin-left: 10px;
+	font-size: 12px;
+	padding: 12px 20px;
 }
 
 .cal-btn{
@@ -1009,3 +1212,5 @@ a:hover{
 .test-btn{
 	margin-top: 3.75%;
 }
+
+

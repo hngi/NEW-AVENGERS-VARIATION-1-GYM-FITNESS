@@ -1,127 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/css/contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <title>Contact</title>
-  </head>
-  <body>
-    
-    <!-- Contact Us start -->
-    <section class="contact bg_grey">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 banner_img text-white">
-            <div class="col-md-6 img_opacity">
-              <img
-                src="./images/We Are Just a Step Closer.png"
-                alt="img"
-                class="img-fluid"
-              />
-              <img
-                src="./images/content.png"
-                alt="img"
-                class="img-fluid img_2"
-              />
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./assets/bootstrap/css/contact.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <!--  NAVBAR STARTS HERE -->
+  <header>
+    <!-- DESKTOP NAVBAR STARTS -->
+    <nav class="container-fluid topnav hide">
+      <div class="row wrapper">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+          <h1 class="company-name">BE<b id="bold">FIT</b></h1>
+        </div>
+        <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+          <ul class="navigation">
+            <li><a href="./index.html">HOME</a></li>
+						<li><a href="./service.html">SERVICES</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
+								PAGES
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item text-dark" href="./products.html">PROUCTS</a>
+								<a class="dropdown-item text-dark" href="./pricing.html">PLANS AND PRICING</a>
+								<a class="dropdown-item text-dark" href="./calculator.html">BMI</a>
+								<a class="dropdown-item text-dark" href="./error.html">4O4 ERROR</a>
+							</div>
+						</li>
+						<li><a href="./team.html">OUR TEAM</a></li>
+						<li><a href="./about.html">ABOUT US</a></li>
+						<li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- DESKTOP NAV NAVBAR ENDS HERE -->
+
+    <!-- MOBILE NAV STARTS -->
+    <div class="fixed-top guy hide-mobile-nav">
+      <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+        <div class="p-4 nav-bg">
+          <h5 class="text-white h4">
+            <ul class="mobile-nav">
+              <li>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Keyword" aria-label="Search" />
+              </li>
+              <li><a href="./index.html">HOME</a></li>
+							<li><a href="./service.html">SERVICES</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									PAGES
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item text-dark" href="./products.html">PROUCTS</a>
+									<a class="dropdown-item text-dark" href="./pricing.html">PLANS AND PRICING</a>
+									<a class="dropdown-item text-dark" href="./calculator.html">BMI</a>
+									<a class="dropdown-item text-dark" href="./error.html">4O4 ERROR</a>
+								</div>
+							</li>
+							<li><a href="./team.html">OUR TEAM</a></li>
+							<li><a href="./about.html">ABOUT US</a></li>
+							<li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </h5>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark hj">
+        <h1 class="company-name-mobile">BE<b id="bold">FIT</b></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><img src="images/navicon.svg" id="navicon" /></span>
+        </button>
+      </nav>
+    </div>
+    <!-- MOBILE NAV ENDS -->
+  </header>
+  <!-- Contact Us start -->
+  <section class="contact bg_grey">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 banner_img text-white">
+          <div class="col-md-6 img_opacity">
+            <img src="./images/We Are Just a Step Closer.png" alt="img" class="img-fluid img_1" />
+            <img src="./images/content.png" alt="img" class="img-fluid img_2" />
           </div>
         </div>
-
-        <div class="col-md-2 ml-auto rectangle_1"></div>
       </div>
-    </section>
 
-    <section class="contact_us bg_contact">
-      <div class="container bg_light bg-white">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="col-md-1 top_square bg-dark"></div>
-            <h4 class="mb-3">
-              Contact Us
-            </h4>
-            <h5 class="hide">Find Us and Connect</h5>
-            <h5 class="know_more text-center">
-              Know More About Our History
-            </h5>
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-12">
-                  <input
-                    type="text"
-                    class="form-control form-control-lg mt-3 mb-2"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="form-group col-md-12">
-                  <input
-                    type="text"
-                    class="form-control form-control-lg mb-2"
-                    placeholder="E-mail Address"
-                  />
-                </div>
-                <div class="form-group col-sm-12">
-                  <textarea
-                    class="form-control form-control-lg mb-2"
-                    placeholder="Message"
-                    rows="6"
-                  ></textarea>
-                </div>
-                <div class="form-group col-md-12">
-                  <input
-                    type="submit"
-                    class="btn btn-primary btn-block mb-3"
-                    value="Send Message"
-                  />
-                </div>
+      <div class="col-md-2 ml-auto rectangle_1"></div>
+    </div>
+  </section>
+
+  <section class="contact_us bg_contact">
+    <div class="container bg_light bg-white">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="col-md-1 top_square bg-dark"></div>
+          <h4 class="mb-3">
+            Contact Us
+          </h4>
+          <h5 class="hide_1">Find Us and Connect</h5>
+          <h5 class="know_more text-center">
+            Know More About Our History
+          </h5>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control form-control-lg mt-3 mb-2" placeholder="Name" />
               </div>
-            </form>
+              <div class="form-group col-md-12">
+                <input type="text" class="form-control form-control-lg mb-2" placeholder="E-mail Address" />
+              </div>
+              <div class="form-group col-sm-12">
+                <textarea class="form-control form-control-lg mb-2" placeholder="Message" rows="6"></textarea>
+              </div>
+              <div class="form-group col-md-12">
+                <input type="submit" class="btn btn-primary btn-block mb-3" value="Send Message" />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-5 ml-auto text-white pt- pb-4 bg_dark">
+          <div class="pt-5 px-4">
+            <img src="./images/email.png" alt="img" class="img-fluid" />
+            <p class="ml-5">gethelp@befit.com</p>
           </div>
 
-          <div class="col-md-5 ml-auto text-white pt- pb-4 bg_dark">
-            <div class="pt-5 px-4">
-              <img src="./images/email.png" alt="img" class="img-fluid" />
-              <p class="ml-5">gethelp@befit.com</p>
-            </div>
-
-            <div class="pt-5 px-4">
-              <img src="./images/map.png" alt="img" class="img-fluid" />
-              <p class="ml-5">15. Delta Drive US</p>
-            </div>
-
-            <div class="pt-5 px-4">
-              <img src="./images/phone.png" alt="img" class="img-fluid" />
-              <p class="ml-5">123-345-567-789-0</p>
-            </div>
-
-            <div class="pt-5 px-4">
-              <img src="./images/wall-clock.png" alt="img" class="img-fluid" />
-              <p class="ml-5">8:00am - 6:00pm</p>
-            </div>
+          <div class="pt-5 px-4">
+            <img src="./images/map.png" alt="img" class="img-fluid" />
+            <p class="ml-5">15. Delta Drive US</p>
           </div>
 
-          <div class="col-md-2 right_block"></div>
-        </div>
-      </div>
-    </section>
+          <div class="pt-5 px-4">
+            <img src="./images/phone.png" alt="img" class="img-fluid" />
+            <p class="ml-5">123-345-567-789-0</p>
+          </div>
 
-    <section class="map">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 mt-4 map_img"></div>
+          <div class="pt-5 px-4">
+            <img src="./images/wall-clock.png" alt="img" class="img-fluid" />
+            <p class="ml-5">8:00am - 6:00pm</p>
+          </div>
         </div>
+
+        <div class="col-md-2 right_block"></div>
       </div>
-    </section>
-    <!-- Contact Us end -->
-  </body>
+    </div>
+  </section>
+
+  <section class="map">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 mt-4 mb-4 map_img"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us end -->
+
+  <!-- DESKTOP FOOTER STARTS -->
+  <footer class="foot hide">
+    <nav class="foot-nav">
+      <ul class="footnav">
+        <li class="companyname desk">BEFIT</li>
+        <li class="margin list"><a href="./index.html">HOME</a></li>
+        <li class="list"><a href="">TOUR</a></li>
+        <li class="list"><a href="">COOKIES POLICY</a></li>
+        <li class="list"><a href="">LEGAL TERMS</a></li>
+      </ul>
+      <hr id="hr" />
+      <div class="socials">
+        <p class="slogn">THE BEST WAY TO BE HEALTHY</p>
+        <p class="socialicons margin">
+          <a href="#"><img class="m-0 p-0 px-2 margin" src="images/instagram.svg" alt="instagram logo" /></a>
+          <a href="#"><img class="m-0 p-0 px-2" src="images/twitter.svg" alt="twitter logo" /></a>
+          <a href="#"><img class="m-0 p-0 px-2" src="images/facebook.svg" alt="pinterest logo" /></a>
+        </p>
+      </div>
+    </nav>
+  </footer>
+  <!-- FOOTER ENDS -->
+
+  <!-- MOBILE FOOTER STARTS -->
+  <footer class="mobile-foot hd">
+    <div>
+      <h1 class="companyname">BEFIT</h1>
+    </div>
+    <div>
+      <ul class="mobilenav">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="">TOUR</a></li>
+        <li><a href="">COKIES POLICY</a></li>
+        <li><a href="">LEGAL TERMS</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="mobilenav">
+        <li class="">THE BEST WAY TO BE HEALTHY</li>
+        <li>
+          <p class="socialicons margin">
+            <a href="#"><img class="m-0 p-0 px-2 margin" src="images/instagram.svg" alt="instagram logo" /></a>
+            <a href="#"><img class="m-0 p-0 px-2" src="images/twitter.svg" alt="twitter logo" /></a>
+            <a href="#"><img class="m-0 p-0 px-2" src="images/facebook.svg" alt="pinterest logo" /></a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- MOBILE FOOTER ENDS -->
+
+  <!-- Script start -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Script end -->
+</body>
+
 </html>
