@@ -131,7 +131,7 @@ main {
   display: grid;
   list-style: none;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -156,7 +156,7 @@ main {
   padding: 2.5%;
   align-items: center;
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 0.75rem;
@@ -266,13 +266,13 @@ main {
   .slogn {
     color: #ffffff;
     padding-left: 2.9%;
-    font: 0.85rem/1.5px Montserrat;
+    font: 0.85rem/1.5px 'Montserrat';
     width: 50%;
   }
 
   .list {
     padding: 0 20px;
-    font: 0.85rem/1.5px Montserrat;
+    font: 0.85rem/1.5px 'Montserrat';
   }
 
   .socialicons {
@@ -287,7 +287,6 @@ main {
 }
 
 @media only screen and (min-width: 992px) {
-
   .navigation,
   .navigation a {
     display: flex;
@@ -310,13 +309,11 @@ main {
 }
 
 .main-wrapper {
-  margin: auto;
   position: relative;
   background-image: url(../images/Rectangle32.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 100%;
   height: 489px;
 }
 
@@ -347,6 +344,18 @@ main {
   .center-text {
     margin-top: -15rem;
   }
+
+  .cfnt {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 2.1rem;
+  }
+
+  #s-card {
+    margin-bottom: 8%;
+    margin-top: 8%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -354,12 +363,19 @@ main {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    margin: 0;
+    margin: 0rem;
   }
 
   #s-card {
     margin-bottom: 8%;
     margin-top: 8%;
+  }
+
+  .center-text {
+    margin-top: -11rem;
+  }
+  .card {
+    margin: auto;
   }
 }
 
@@ -373,7 +389,7 @@ main {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .price__plan {
@@ -449,6 +465,6 @@ span {
   font-size: large;
   font-weight: bold;
 }
-.margin-to-zero{
+.margin-to-zero {
   margin: 0;
 }
