@@ -349,7 +349,6 @@ main {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    margin: 2.1rem;
   }
 
   #s-card {
@@ -372,10 +371,10 @@ main {
   }
 
   .center-text {
-    margin-top: -11rem;
+    margin-top: -15rem;
   }
   .card {
-    margin: auto;
+    margin: 0 auto;
   }
 }
 

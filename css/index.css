@@ -1,1277 +1,1256 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-select{
-	background: #000000;
-	color: #FBFAFB;
+select {
+  background: #000000;
+  color: #fbfafb;
 }
 
-footer{
-	display: block;
+footer {
+  display: block;
 }
 
-a:hover{
-	text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 /*buttons*/
-.color, .color a{
-	background-color: #FF4301;
-	border-radius: 5px;
-	color: #FFFFFF;
+.color,
+.color a {
+  background-color: #ff4301;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
-.about-btn{
-	font-size: 12px;
-	padding: 12px 20px;
+.about-btn {
+  font-size: 12px;
+  padding: 12px 20px;
 }
 
-.cal-btn{
-	width: 100%;
+.cal-btn {
+  width: 100%;
 }
 
-.border{
-	border: 1px solid color: #FFFFFF;
+.border {
+  border: 1px solid color #ffffff;
 }
 
-.test-btn{
-	margin-top: 3.75%;
+.test-btn {
+  margin-top: 3.75%;
 }
 /*code is responsive on all screen*/
 /*MEDIA QUERIES FOR MAJOR SCREEN SIZES*/
-@media all and (min-width: 0px){
-	/*cover section*/
-	.cover{
-		font-family: 'Montserrat', sans-serif;
-		background-image: url("../images/landingcovermobile.svg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 60vh;
-		color: #FFFFFF;
-		padding: 80px 20px 50px 20px;
-		width: 100%;
-		position: relative;
-		z-index: 0;
-	}
-
-	#slogan{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.575rem;
-	}
-
-	.covertext{
-		font: 1rem/1.5rem 'Montserrat', sans-serif;
-		font-size: 0.8rem;
-		font-style: normal;
-		font-weight: normal;
-	}
-	/*card section*/
-	/*best way for positioning card to the top is by using "negaive margin top"*/
-	.cards{
-		background-color: white;
-		height: 70vh;
-		width: 100%;
-	}
-	.card_s{
-		position: absolute;
-		z-index: 1;
-		top: 52%;
-		width: 100%;
-		padding: 2px;
-		margin: 0;
-	}
-	.card-body{
-		height: 350px;	
-	}
-
-	.card{
-		height: 100%;
-	}
-
-	.card-title{
-		font-size: 0.7rem;
-	}
-
-	.card-text{
-		display: flex;
-		align-items: flex-end;
-		font-size: 0.6rem;
-		line-height: 1.1rem;
-	}
-
-	.grey{
-		background: #FBFAFB;
-		color: #000000;
-		height: 35vh;
-	}
-
-	.orange{
-		background: #FF4301;
-		color: #FFFFFF;
-		height: 35vh;
-	}
-
-	.cardheader{
-		font-size: 1.2rem;
-		font-weight: bold;
-		line-height: 1.3rem;	
-	}
-
-	.mk{
-		margin-bottom: 10px;
-	}
-	/*card section ends*/
-	/*cover section ends*/
-	/*about section begins*/
-	.about{
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		background: #FBFAFB;
-		height: 100%;
-	}
-
-	.about-img{
-		background-image: url(../images/about-mobile.svg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 60vh;
-
-	}
-
-	.aboutwrapper{
-		padding: 10px;
-		margin: 0;
-	}
-
-	.about-content{
-		padding: 10px;
-	}
-
-	.title{
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		line-height: 30px;
-		color: #000000;
-		padding: 15px 0;
-	}
-
-	.subtitle{
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 22px;
-		color: #FF4301;
-	}
-
-	#aboutsubtitle{
-		font-size: 12px;
-		line-height: 1.3;
-	}
-	.about-text{
-		font-size: 10px;
-	}
-	/*about section ends*/
-	/*services intro starts*/
-	.services-intro{
-		display: grid;
-		width: 100%;
-		height: 10vh;
-		background-image: url("../images/services-intro.svg");
-		margin: 0;
-	}
-
-	.extra{
-		height: 10vh;
-	}
-
-	.services-introwrapper{
-		margin: 0;
-		align-items: center;
-		padding-left: 10px;	
-	}
-
-	.introimg{
-		height: 30px;
-	}
-
-	.subtitle2{
-		font-size: 8px;
-		color: white;
-	}
-	/*servives intro ends*/
-	/*services start*/
-	.prog{
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 22px;
-		color: #000000;
-	}
-
-	.services{
-		background: #FBFAFB;
-		padding: 2.0%;
-		height: 50vh;
-	}
-
-	.serviceswrapper{
-		width: 100%
-	}
-
-	.services-img{
-		background-image:
-		 url("../images/servicescover1.svg"),
-		 url("../images/servicescover2.svg");
-		 background-position: 
-		 100% 12%,
-		 60% 0.1%;
-		background-size:
-		210px, 200px;
-		background-repeat: no-repeat;
-		height: 50vh;
-	}
-
-	.sev-img{
-		height: 30px;
-	}
-
-	#special{
-		font-size: 16px;
-	}
-	/*services ends*/
-	/*gym class section starts*/
-	.Gymclass{
-		height: 100%;
-		margin: 0;
-		width: 100%;
-		background: #FBFAFB;		
-	}
-
-	.Gymclasswrapper{
-		margin: 0;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.gym-img{
-		position: relative;
-		z-index: 1;
-		height: 100%;
-		width: 100%;
-		padding: 0 20px;
-	}
-
-	.clas2{
-		padding-left: 3.7%;
-		font: 11px/22px Open Sans;
-		font-style: normal;
-		font-weight: 600;
-		color: #000000;
-	}
-
-	.cls{
-		display: flex;
-	}
-
-	.enroll{
-		margin-left: auto;
-		padding-right: 20px;
-		font: 12px/22px Open Sans;
-		font-weight: bold;
-		color: #FF4301;
-	}
-
-	.try{
-		padding-left: 35px;
-		width: 100%;
-	}
-	/*gym class section ends*/
-
-	/*pricing sections*/
-	.background{
-		font-size: 12px;
-	}
-
-	.pricing{
-		background: #FFFFFF;
-	}
-	/*pricing section ends*/
-
-	/*form section starts*/
-	.forms{
-		background: #000000;
-		color: #FFFFFF; 
-		height: 100%;
-		margin: 0;
-		width: 100%;
-	}
-
-	.formwrapper{
-		margin: 0;
-		padding: 4% 6.4%;
-		width: 100%;
-		height: 100%;
-	}
-
-	.selectwrapper{
-		display: flex;
-		justify-content: center;
-		margin-top: 50px;
-		padding: 10px 10px 10px 20px;
-		border: 1px solid #FBFAFB;
-		width: 100%;
-	}
-
-	.sizing{
-		margin: 0.8% 3.2% 3.2% 0.8%;
-		width: 30%;
-		padding: 15px;
-	}
-
-	.ff{
-		padding-left: 15px;
-	}
-
-	.sizing2{
-		padding-bottom: 5px;
-	}
-
-	.sizing3{
-		padding: 0;
-	}
-	/*form section ends*/
-
-	/*test section starts*/
-	.test-section{
-		background: #FF4301;
-		color: #FFFFFF;
-		height: 100%;
-	}
-
-	.test-img{
-		height: 370px;
-		width: 100%;
-		padding: 27px 0  10px 0;
-
-	}
-
-	.testwrapper{
-		padding: 5% 2.5%;
-	}
-
-	.test-title{
-		font: 18px/25px Open Sans;
-		font-weight: 600;
-		color: #FFFFFF;
-	}
-
-	.test-content{
-		font: 16px/24px Open Sans;
-		font-weight: 600;
-		color: #FFFFFF;
-
-	}
-	/*test section ends*/
-	/*gallery section starts*/
-	.gallery{
-		background: #FFFFFF;
-		height: 100%;
-		padding: 50px 10px;
-	}
-
-	.gal-class{
-		position: absolute;
-		z-index: 2;
-		top: 90%;
-		left: 10%;
-		padding-left: 20px;
-		font: 18px/34px Montserrat;
-		font-weight: bold;
-		color: #FF4301;
-	}
-
-	.gallery-img{
-		height: 100%;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
-	.gallerywrapper{
-		padding: 0;
-		margin: 0;
-	}
-
-	.size{
-		margin: 0;
-		padding: 0;
-	}
-	/*gallery section ends*/
-	/*carousel starts*/
-	.slides{
-		height: 100%;
-		background: #FBFAFB;
-		padding-top: 4.68%;
-	}
-
-	.d-block, .w-100{
-		height: 200px;
-	}
-
-	.reviews{
-		display: grid;
-		justify-content: center;
-		text-align: justify;
-		padding: 10px;
-		text-align: justify;
-	}
-
-	.review{
-		padding: 0 30px;
-	}
-
-	.clientname{
-		text-align: center;
-		font: 28px/28px Open Sans;
-		color: #FF4301;
-	}
-
-	.navimg{
-		height: 30px;
-	}
-	/*carousel ends*/
-
-	/*blog section starts*/
-	.blog{
-		padding: 4.3%;
-	}
-
-	.blogwrapper{
-		margin: 0;
-	}
-
-	.show{
-		display: block;
-	}
-
-	.blogimg{
-		position: relative;
-		z-index: 1;
-		height: 100%;
-		width: 100%;
-		padding: 1%;
-	}
-
-	.post{
-		position: absolute;
-		z-index: 2;
-		top: 70%;
-		left: 10%;
-		font: 18px/28px Montserrat;
-		font-weight: bold;
-		color: #FFFFFF;
-	}
-	/*blog section ends*/
-
-	/*contact section begins*/
-	.contactwrapper{
-		background: #222222;
-		color: #FFFFFF;
-		margin: 0;
-		width: 100%;
-	}
-
-	.align{
-		display: grid;
-		justify-content: center;
-		padding: 2.25%;		
-	}
-
-	.subtitle{
-		font-size: 20px;
-	}
-
-	.date{
-		font: 16px/28px Montserrat;
-		font-weight: 600;	
-		color: #FFFFFF;
-	}
-
-	.sch{
-		font: 18px/25px Open Sans;
-		font-weight: bold;
-		color: #FF4301;
-	}	
-	/*contact section ends*/
-	#maps{
-		width: 100%;
-		height: 100%;
-	}	
+@media all and (min-width: 0px) {
+  /*cover section*/
+  .cover {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/landingcovermobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: #ffffff;
+    padding: 80px 20px 50px 20px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+
+  #slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.575rem;
+  }
+
+  .covertext {
+    font: 1rem/1.5rem 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: normal;
+  }
+  /*card section*/
+  /*best way for positioning card to the top is by using "negaive margin top"*/
+  .cards {
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+  }
+  .card_s {
+    position: absolute;
+    z-index: 1;
+    top: 52%;
+    width: 100%;
+    padding: 2px;
+    margin: 0;
+  }
+  .card-body {
+    height: 350px;
+  }
+
+  .card {
+    height: 100%;
+  }
+
+  .card-title {
+    font-size: 0.7rem;
+  }
+
+  .card-text {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+  }
+
+  .grey {
+    background: #fbfafb;
+    color: #000000;
+    height: 35vh;
+  }
+
+  .orange {
+    background: #ff4301;
+    color: #ffffff;
+    height: 35vh;
+  }
+
+  .cardheader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+  }
+
+  .mk {
+    margin-bottom: 10px;
+  }
+  /*card section ends*/
+  /*cover section ends*/
+  /*about section begins*/
+  .about {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #fbfafb;
+    height: 100%;
+  }
+
+  .about-img {
+    background-image: url(../images/about-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .aboutwrapper {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+
+  .title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    padding: 15px 0;
+  }
+
+  .subtitle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #ff4301;
+  }
+
+  #aboutsubtitle {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  .about-text {
+    font-size: 10px;
+  }
+  /*about section ends*/
+  /*services intro starts*/
+  .services-intro {
+    display: grid;
+    width: 100%;
+    height: 10vh;
+    background-image: url('../images/services-intro.svg');
+    margin: 0;
+  }
+
+  .extra {
+    height: 10vh;
+  }
+
+  .services-introwrapper {
+    margin: 0;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .introimg {
+    height: 30px;
+  }
+
+  .subtitle2 {
+    font-size: 8px;
+    color: white;
+  }
+  /*servives intro ends*/
+  /*services start*/
+  .prog {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  .services {
+    background: #fbfafb;
+    padding: 2%;
+    height: 50vh;
+  }
+
+  .serviceswrapper {
+    width: 100%;
+  }
+
+  .services-img {
+    background-image: url('../images/servicescover1.svg'),
+      url('../images/servicescover2.svg');
+    background-position: 100% 12%, 60% 0.1%;
+    background-size: 210px, 200px;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+
+  .sev-img {
+    height: 30px;
+  }
+
+  #special {
+    font-size: 16px;
+  }
+  /*services ends*/
+  /*gym class section starts*/
+  .Gymclass {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    background: #fbfafb;
+  }
+
+  .Gymclasswrapper {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gym-img {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .clas2 {
+    padding-left: 3.7%;
+    font: 11px/22px Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .cls {
+    display: flex;
+  }
+
+  .enroll {
+    margin-left: auto;
+    padding-right: 20px;
+    font: 12px/22px Open Sans;
+    font-weight: bold;
+    color: #ff4301;
+  }
+
+  .try {
+    padding-left: 35px;
+    width: 100%;
+  }
+  /*gym class section ends*/
+
+  /*pricing sections*/
+  .background {
+    font-size: 12px;
+  }
+
+  .pricing {
+    background: #ffffff;
+  }
+  /*pricing section ends*/
+
+  /*form section starts*/
+  .forms {
+    background: #000000;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+
+  .formwrapper {
+    margin: 0;
+    padding: 4% 6.4%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .selectwrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #fbfafb;
+    width: 100%;
+  }
+
+  .sizing {
+    margin: 0.8% 3.2% 3.2% 0.8%;
+    width: 30%;
+    padding: 15px;
+  }
+
+  .ff {
+    padding-left: 15px;
+  }
+
+  .sizing2 {
+    padding-bottom: 5px;
+  }
+
+  .sizing3 {
+    padding: 0;
+  }
+  /*form section ends*/
+
+  /*test section starts*/
+  .test-section {
+    background: #ff4301;
+    color: #ffffff;
+    height: 100%;
+  }
+
+  .test-img {
+    height: 370px;
+    width: 100%;
+    padding: 27px 0 10px 0;
+  }
+
+  .testwrapper {
+    padding: 5% 2.5%;
+  }
+
+  .test-title {
+    font: 18px/25px Open Sans;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .test-content {
+    font: 16px/24px Open Sans;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  /*test section ends*/
+  /*gallery section starts*/
+  .gallery {
+    background: #ffffff;
+    height: 100%;
+    padding: 50px 10px;
+  }
+
+  .gal-class {
+    position: absolute;
+    z-index: 2;
+    top: 90%;
+    left: 10%;
+    padding-left: 20px;
+    font: 18px/34px Montserrat;
+    font-weight: bold;
+    color: #ff4301;
+  }
+
+  .gallery-img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallerywrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  .size {
+    margin: 0;
+    padding: 0;
+  }
+  /*gallery section ends*/
+  /*carousel starts*/
+  .slides {
+    height: 100%;
+    background: #fbfafb;
+    padding-top: 4.68%;
+  }
+
+  .d-block,
+  .w-100 {
+    height: 200px;
+  }
+
+  .reviews {
+    display: grid;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .review {
+    padding: 0 30px;
+  }
+
+  .clientname {
+    text-align: center;
+    font: 28px/28px Open Sans;
+    color: #ff4301;
+  }
+
+  .navimg {
+    height: 30px;
+  }
+  /*carousel ends*/
+
+  /*blog section starts*/
+  .blog {
+    padding: 4.3%;
+  }
+
+  .blogwrapper {
+    margin: 0;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .blogimg {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+  }
+
+  .post {
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 10%;
+    font: 18px/28px Montserrat;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  /*blog section ends*/
+
+  /*contact section begins*/
+  .contactwrapper {
+    background: #222222;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+  }
+
+  .align {
+    display: grid;
+    justify-content: center;
+    padding: 2.25%;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .date {
+    font: 16px/28px Montserrat;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .sch {
+    font: 18px/25px Open Sans;
+    font-weight: bold;
+    color: #ff4301;
+  }
+  /*contact section ends*/
+  #maps {
+    width: 100%;
+    height: 100%;
+  }
 }
- /*(media query  for small phones) */
-@media all and (min-width: 240px) and (min-height: 320px){
-	.cover{
-		height: 100%;
-	}
+/*(media query  for small phones) */
+@media all and (min-width: 240px) and (min-height: 320px) {
+  .cover {
+    height: 100%;
+  }
 
-	.card_s{
-		/*position: relative;*/
-		top: 110%;	
-	}
+  .card_s {
+    /*position: relative;*/
+    top: 110%;
+  }
 
-	.cards{
-		height: 195vh;
-	}
+  .cards {
+    height: 195vh;
+  }
 
-	.orange, .grey{
-		height: 100vh;
-	}
+  .orange,
+  .grey {
+    height: 100vh;
+  }
 
-	.services{
-		height: 100%;
-	}
+  .services {
+    height: 100%;
+  }
 
-	.services-img{
-		height: 120vh;
-	}
+  .services-img {
+    height: 120vh;
+  }
 
-	.about{
-		height: 100%;
-	}
+  .about {
+    height: 100%;
+  }
 
-	.about-img{
-		height: 120vh;
-	}
+  .about-img {
+    height: 120vh;
+  }
 
-	.about-btn{
-		padding: 2px;
-	}
+  .about-btn {
+    padding: 2px;
+  }
 
-	.introimg{
-		height: 8px;
-	}
+  .introimg {
+    height: 8px;
+  }
 }
 
 /*media query for Iphone 5/SE and similar screen sizes*/
-@media all and (min-width: 320px) and (min-height: 480px){
-	.cover{
-		height: 70vh;
-	}
-	.cards{
-		height: 80vh;
-	}
+@media all and (min-width: 320px) and (min-height: 480px) {
+  .cover {
+    height: 70vh;
+  }
+  .cards {
+    height: 80vh;
+  }
 
-	.orange, .grey{
-		height: 40vh;
-	}
+  .orange,
+  .grey {
+    height: 40vh;
+  }
 
-	.card_s{
-		top: 62%;
-	}
+  .card_s {
+    top: 62%;
+  }
 
-	.introimg{
-		height: 20px;
-	}
+  .introimg {
+    height: 20px;
+  }
 }
 /*media query for Iphone X and similar screen sizes*/
-@media all and (min-width: 320px) and (min-height: 500px){
-	.about-img{
-		height: 50vh;
-	}
+@media all and (min-width: 320px) and (min-height: 500px) {
+  .about-img {
+    height: 50vh;
+  }
 
-	.cards{
-		height: 70vh;
-	}
+  .cards {
+    height: 70vh;
+  }
 
-	.orange, .grey{
-		height: 35vh;
-	}
+  .orange,
+  .grey {
+    height: 35vh;
+  }
 
-	.services{
-		height: 50vh;
-	}
+  .services {
+    height: 50vh;
+  }
 
-	.services-img{
-		background-position: 
-		100% 7%,
-		60% 0.1%;
-		background-size:
-		210px, 200px;
-		background-repeat: no-repeat;
-		height: 52vh;
-	}
-	.about-btn{
-		font-size: 8px;
-		padding: 12px 20px;
-	}
+  .services-img {
+    background-position: 100% 7%, 60% 0.1%;
+    background-size: 210px, 200px;
+    background-repeat: no-repeat;
+    height: 52vh;
+  }
+  .about-btn {
+    font-size: 8px;
+    padding: 12px 20px;
+  }
 }
 /*media query for Iphone 6/7/8 and similar screen sizes*/
-@media all and (min-width: 375px) and (min-height: 812px){
-	.about-img{
-		height: 40vh;
-	}
+@media all and (min-width: 375px) and (min-height: 812px) {
+  .about-img {
+    height: 40vh;
+  }
 
-	.cards{
-		height: 70vh;
-	}
+  .cards {
+    height: 70vh;
+  }
 
-	.orange, .grey{
-		height: 35vh;
-	}
+  .orange,
+  .grey {
+    height: 35vh;
+  }
 
-	.services{
-		height: 45vh;
-	}
+  .services {
+    height: 45vh;
+  }
 }
 /*media query for Huawei Y9 2019 and similar screen sizes*/
-@media all and (min-width: 420px){
-	#slogan{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.875rem;
-	}
+@media all and (min-width: 420px) {
+  #slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.875rem;
+  }
 
-	.covertext{
-		font: 1rem/1.5rem 'Montserrat', sans-serif;
-		font-size: 1rem;
-	}
+  .covertext {
+    font: 1rem/1.5rem 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
 
-	.cards{
-		height: 45vh;
-	}
+  .cards {
+    height: 45vh;
+  }
 
-	.card_s{
-		top: 40%;
-		padding: 10px;
-		margin: 0;
-	}
+  .card_s {
+    top: 40%;
+    padding: 10px;
+    margin: 0;
+  }
 
-	.about{
-		height: 50vh;
-	}
+  .about {
+    height: 50vh;
+  }
 
-	.about-img{
-		height: 40vh;
-	}
+  .about-img {
+    height: 40vh;
+  }
 
-	.about-content{
-		padding: 12px 20px;
-	}
+  .about-content {
+    padding: 12px 20px;
+  }
 
-	.orange, .grey{
-		height: 25vh;
-	}
+  .orange,
+  .grey {
+    height: 25vh;
+  }
 
-	.about-btn{
-		font-size: 12px;
-		padding: 12px 20px;
-	}
+  .about-btn {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
 
-	.services{
-		height: 40vh;
-	}
-	/*map section*/
-	#maps{
-		width: 100%;
-		height: 100%;
-	}
-
-
-
+  .services {
+    height: 40vh;
+  }
+  /*map section*/
+  #maps {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*more card responsiveness*/
-@media all and (min-width: 420px) and (min-height: 640px){
-	.card_s{
-		
-		top: 55%;
-	}
+@media all and (min-width: 420px) and (min-height: 640px) {
+  .card_s {
+    top: 55%;
+  }
 }
 /*media query for small tablet*/
-@media all and (min-width: 480px) and (min-height: 640px){
-	.cards{
-		height: 45vh;
-	}
-	.card_s{
-		top: 55%;
-	}
+@media all and (min-width: 480px) and (min-height: 640px) {
+  .cards {
+    height: 45vh;
+  }
+  .card_s {
+    top: 55%;
+  }
 }
 
 /*media query for medium sized tablet*/
-@media all and (min-width: 575px){
-	.cards{
-		height: 50vh;
-	}
+@media all and (min-width: 575px) {
+  .cards {
+    height: 50vh;
+  }
 
-	.card-title{
-		font-size: 15px;
-	}
+  .card-title {
+    font-size: 15px;
+  }
 
-	.card-text{
-		font-size: 13px;
-	}
+  .card-text {
+    font-size: 13px;
+  }
 
-	.grey .orange{
-		padding: 20px 40px;
-	}
+  .grey .orange {
+    padding: 20px 40px;
+  }
 
-	.pricing{
-		display: none;
-	}
-	.gallery{
-		height: 100%;
-		padding: 50px;
-	}
+  .pricing {
+    display: none;
+  }
+  .gallery {
+    height: 100%;
+    padding: 50px;
+  }
 
-	.gal-class{
-		padding-left: 0;
-		font-size: 16px;
-	}
+  .gal-class {
+    padding-left: 0;
+    font-size: 16px;
+  }
 
-	.hide1{
-		display: block;
-	}
+  .hide1 {
+    display: block;
+  }
 
-	.services{
-		height: 50vh;
-	}
+  .services {
+    height: 50vh;
+  }
 
-	.about-img{
-		height: 50vh;
+  .about-img {
+    height: 50vh;
+  }
 
-	}
-
-	.about{
-		height: 55vh;
-	}
+  .about {
+    height: 55vh;
+  }
 }
 /*media query for standard tablet*/
-@media all and (min-width: 768px){
-	.show{
-		display: none;
-	
-	}
-	.cards{
-		height: 20vh;
-	}
+@media all and (min-width: 768px) {
+  .show {
+    display: none;
+  }
+  .cards {
+    height: 20vh;
+  }
 
-	.grey, .orange{
-		height: 25vh;
-		padding: 10px;
-	}	
+  .grey,
+  .orange {
+    height: 25vh;
+    padding: 10px;
+  }
 }
 /*media query for Ipad and similar screen sizes*/
-@media all and (min-width: 768px) and (min-height: 1024px){
+@media all and (min-width: 768px) and (min-height: 1024px) {
+  .hide {
+    display: block;
+  }
 
-	.hide{
-		display: block;
-	}
+  .cover {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/landingcover.svg');
+    background-size: cover;
+    height: 60vh;
+    color: #ffffff;
+    padding: 150px 100px;
+    width: 100%;
+  }
 
-	.cover{
-		font-family: 'Montserrat', sans-serif;
-		background-image: url("../images/landingcover.svg");
-		background-size: cover;
-		height: 60vh;
-		color: #FFFFFF;
-		padding: 150px 100px;
-		width: 100%;
-	}
+  #slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
 
-	#slogan{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 3rem;
-		font-weight: bold;
-	}
+  .covertext {
+    font: 1rem/1.5rem 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+  /*card section*/
+  .cards {
+    background-color: white;
+    height: 20vh;
+    width: 100%;
+  }
+  .card_s {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
 
-	.covertext{
-		font: 1rem/1.5rem 'Montserrat', sans-serif;
-		font-weight: 300;
+  .card-title {
+    font-size: 1rem;
+  }
 
-	}
-	/*card section*/
-	.cards{
-		background-color: white;
-		height: 20vh;
-		width: 100%;
-		
-	}
-	.card_s{
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		padding: 10px;
-		margin: 0;
-	}
-	
-	.card-title{
-		font-size: 1rem;
-	}
+  .card-text {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
 
-	.card-text{
-		display: flex;
-		align-items: flex-end;
-		font-size: 0.7rem;
-		line-height: 1.5rem;
-	}
+  .grey {
+    background: #fbfafb;
+    color: #000000;
+    box-shadow: -2px 10px 10px 0px #e5e5e5;
+    height: 20vh;
+  }
 
-	.grey{
-		background: #FBFAFB;
-		color: #000000;
-		box-shadow: -2px 10px 10px 0px #E5E5E5;
-		height: 20vh;
-	}
+  .orange {
+    background: #ff4301;
+    color: #ffffff;
+    box-shadow: -2px 10px 10px 0px #e5e5e5;
+    height: 20vh;
+  }
 
-	.orange{
-		background: #FF4301;
-		color: #FFFFFF;
-		box-shadow: -2px 10px 10px 0px #E5E5E5;
-		height: 20vh;
+  .cardheader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+  }
 
-	}
+  /*card section ends*/
 
-	.cardheader{
-		font-size: 1.2rem;
-		font-weight: bold;
-		line-height: 1.3rem;	
-	}
+  /*cover section ends*/
 
-	/*card section ends*/
+  /*about section begins*/
+  .about {
+    height: 40vh;
+  }
 
-	/*cover section ends*/
+  .about-img {
+    height: 38vh;
+    width: 100%;
+  }
 
+  .about-inner {
+    padding: 50px;
+  }
 
-	/*about section begins*/
-	.about{
-		height: 40vh;
-	}
+  /*about section ends*/
 
-	.about-img{
-		height: 38vh;
-		width: 100%;
-	}
+  /*service intro starts*/
+  .services-introwrapper {
+    margin: 0;
+    align-items: center;
+    padding-left: 50px;
+  }
 
-	.about-inner{
-		padding: 50px;
-	}
+  /*service into ends*/
 
-	/*about section ends*/
+  /*services start*/
+  .services {
+    padding: 4.8%;
+    height: 100%;
+  }
 
-	/*service intro starts*/
-	.services-introwrapper{
-		margin: 0;
-		align-items: center;
-		padding-left: 50px;
-		
-	}
+  .services-img {
+    background-image: url('../images/servicescover1.svg'),
+      url('../images/servicescover2.svg');
+    background-size: 315px, 300px;
+    background-position: 100% 30%, 50% 10%;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+  /*services ends*/
+  /*gym class section starts*/
+  .Gymclass {
+    height: 100%;
+    padding: 50px 100px;
+  }
 
-	/*service into ends*/
+  .Gymclasswrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-	/*services start*/
-	.services{
-		padding: 4.8%;
-		height: 100%
+  .gym-img {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
 
-	}
-	
-	.services-img{
-		background-image:
-		 url("../images/servicescover1.svg"),
-		 url("../images/servicescover2.svg");
-		background-size: 315px, 300px;
-		background-position: 
-		100% 30%,
-		50% 10%;
-		background-repeat: no-repeat;
-		height: 30vh;
-	}
-	/*services ends*/
-	/*gym class section starts*/
-	.Gymclass{
-		height: 100%;
-		padding: 50px 100px;
-	}
+  .enroll {
+    margin-left: auto;
+    padding-right: 0;
+  }
 
-	.Gymclasswrapper{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  .try {
+    padding-left: 18px;
+    width: 100%;
+  }
 
-	.gym-img{
-		height: 100%;
-		width: 100%;
-		padding: 0;
-	}
+  .clas2 {
+    font-size: 15px;
+  }
 
-	.enroll{
-		margin-left: auto;
-		padding-right: 0;
-	}
+  /*gym class section ends*/
 
-	.try{
-		padding-left: 18px;
-		width: 100%;
-	}
+  /*pricing starts*/
+  .pricing {
+    background: #ffffff;
+    height: 100%;
+  }
 
-	.clas2{
-		font-size: 15px;
-	}
-	
-	/*gym class section ends*/
+  .background {
+    padding: 1%;
+    background: #fbfafb;
+  }
+  /*pricing ends*/
+  /*test section starts*/
+  .testwrapper {
+    padding: 5%;
+  }
+  .test-title {
+    font-size: 30px;
+  }
 
-	/*pricing starts*/
-	.pricing{
-		background: #FFFFFF;
-		height: 100%;
-	}
+  /*test section ends*/
 
-	.background{
-		padding: 1%;
-		background: #FBFAFB;	
-	}
-	/*pricing ends*/
-	/*test section starts*/
-	.testwrapper{
-		padding: 5%;
-	}
-	.test-title{
-		font-size: 30px;
-	}
+  /*gallery section starts*/
+  .gallery {
+    height: 100%;
+  }
+  /*gallery section ends*/
 
-	/*test section ends*/
+  /*carousel section starts*/
+  .slides {
+    height: 100%;
+  }
 
-	/*gallery section starts*/
-	.gallery{
-		height: 100%;
-	}
-	/*gallery section ends*/
+  .reviews {
+    text-align: center;
+  }
 
-	/*carousel section starts*/
-	.slides{
-		height: 100%;
-	}
+  /*carousel section ends*/
 
-	.reviews{
-		text-align: center;
-	}
+  /*blog section starts*/
+  .post {
+    font-size: 26px;
+  }
 
-	/*carousel section ends*/
+  .kk {
+    display: grid;
+    align-items: center;
+  }
 
-	/*blog section starts*/
-	.post{
-		font-size: 26px;
-	}
+  .blogimg1 {
+    height: 100%;
+  }
+  /*blog section ends*/
 
-	.kk{
-		display: grid;
-		align-items: center;
-	}
+  .show {
+    display: none;
+  }
 
-	.blogimg1{
-		height: 100%;
-	}
-	/*blog section ends*/
+  /*contact us start*/
+  .align {
+    display: grid;
+    justify-content: flex-start;
+  }
 
-	.show{
-		display: none;
-	}
-
-	/*contact us start*/
-	.align{
-		display: grid;
-		justify-content: flex-start;
-	}
-
-	.title{
-		font-size: 2.25rem;
-	}	
-	/*contact us ends*/	
+  .title {
+    font-size: 2.25rem;
+  }
+  /*contact us ends*/
 }
 
 /*media query for most phones(desktop view)*/
 @media all and (min-width: 780px) and (min-height: 1322px) {
-	.card_s{
-		position: absolute;
-		top: 55%;
-	}
+  .card_s {
+    position: absolute;
+    top: 55%;
+  }
 
-	.cards{
-		height: 15vh;
+  .cards {
+    height: 15vh;
+  }
 
-	}
+  .grey,
+  .orange {
+    height: 16vh;
+  }
 
-	.grey, .orange{
-		height: 16vh;
-	}
+  .cover {
+    padding-top: 300px;
+  }
 
-	.cover{
-		padding-top: 300px;
-	}
-
-	.services{
-		height: 40vh;
-	}
+  .services {
+    height: 40vh;
+  }
 }
 /*media query for Ipad pro and similiar screen sizes*/
 @media all and (min-width: 820px) and (min-height: 1322px) {
-	.card_s{
-		position: absolute;
-		top: 60%;
-	}
+  .card_s {
+    position: absolute;
+    top: 60%;
+  }
 
-	.cards{
-		height: 15vh;
+  .cards {
+    height: 15vh;
+  }
 
-	}
+  .grey,
+  .orange {
+    height: 11vh;
+  }
 
-	.grey, .orange{
-		height: 11vh;
-	}
+  .cover {
+    padding-top: 300px;
+  }
 
-	.cover{
-		padding-top: 300px;
-	}
-
-	.services{
-		height: 40vh;
-	}
+  .services {
+    height: 40vh;
+  }
 }
 /*media query for small/medium laptop and bigger tablet screens*/
-@media all and (min-width: 992px){
-	.hide{
-		display: block;
-	}
+@media all and (min-width: 992px) {
+  .hide {
+    display: block;
+  }
 
-	.cover{
-		height: 90vh;
-		padding: 150px;
-		background-size: cover;
-	}
+  .cover {
+    height: 90vh;
+    padding: 150px;
+    background-size: cover;
+  }
 
-	#slogan{
-		font-family: 'Montserrat', sans-serif;
-		font-size: 4em;
-		font-weight: bold;
-	}
+  #slogan {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+  }
 
-	.covertext{
-		font: 1.25rem/1.5rem 'Montserrat', sans-serif;
-		font-weight: 300;
-	}
+  .covertext {
+    font: 1.25rem/1.5rem 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
 
-	/*card section starts*/
+  /*card section starts*/
 
-	.cards{
-		background-color: white;
-		height: 30vh;
-		width: 100%;	
-	}
+  .cards {
+    background-color: white;
+    height: 30vh;
+    width: 100%;
+  }
 
-	.card_s{
-		position: absolute;
-		top: 80%;
-	}
+  .card_s {
+    position: absolute;
+    top: 80%;
+  }
 
-	.card{
-		height: 300px;
-	}
+  .card {
+    height: 300px;
+  }
 
-	.grey, .orange{
-		height: 30vh;
+  .grey,
+  .orange {
+    height: 30vh;
+  }
+  /*card section ends*/
 
-	}
-	/*card section ends*/
+  /*about section starts*/
+  .about {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #fbfafb;
+    height: 70vh;
+  }
 
-	/*about section starts*/
-	.about{
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		background: #FBFAFB;
-		height: 70vh;
-	}
+  .about-img {
+    height: 60vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-	.about-img{
-		height: 60vh;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  .aboutwrapper {
+    padding: 40px;
+  }
 
-	.aboutwrapper{
-		padding: 40px;
-	}
+  .about-inner {
+    padding: 100px;
+  }
 
-	.about-inner{
-		padding: 100px;
-	}
+  .about-text {
+    margin-top: 20px;
+  }
+  /*about section ends*/
+  /*service intro starts*/
+  .services-introwrapper {
+    margin: 0;
+    align-items: center;
+    padding-left: 100px;
+  }
+  /*service into ends*/
+  /*services start*/
+  .services {
+    padding: 6.4%;
+    height: 80vh;
+  }
 
-	.about-text{
-		margin-top: 20px;
-	}
-	/*about section ends*/
-	/*service intro starts*/
-	.services-introwrapper{
-		margin: 0;
-		align-items: center;
-		padding-left: 100px;	
-	}
-	/*service into ends*/
-	/*services start*/
-	.services{
-		padding: 6.4%;
-		height: 80vh;
-	}
+  .services-img {
+    background-image: url('../images/servicescover1.svg'),
+      url('../images/servicescover2.svg');
+    background-position: 70% 50%, 60% 10%;
+    background-size: 350px, 350px;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+  /*services ends*/
+  /*gym class section starts*/
+  .Gymclass {
+    height: 80vh;
+  }
 
-	.services-img{
-		background-image:
-		 url("../images/servicescover1.svg"),
-		 url("../images/servicescover2.svg");
-		 background-position: 
-		 70% 50%,
-		 60% 10%;
-		background-size:
-		350px, 350px;
-		background-repeat: no-repeat;
-		height: 70vh;
-	}
-	/*services ends*/
-	/*gym class section starts*/
-	.Gymclass{
-		height: 80vh;
-	}
+  .pricing {
+    height: 80vh;
+  }
+  /*gym class section ends*/
+  /*gallery section starts*/
+  .gallery {
+    height: 120vh;
+  }
 
-	.pricing{
-		height: 80vh;
-	}
-	/*gym class section ends*/
-	/*gallery section starts*/
-	.gallery{
-		height: 120vh;
-	}
+  .gal-class {
+    padding-left: 0;
+    font-size: 28px;
+  }
+  /*test section starts*/
+  .testwrapper {
+    padding: 5% 5% 3% 5%;
+  }
+  .test-title {
+    font-size: 36px;
+  }
+  /*test section ends*/
+  /*gallery section ends*/
+  /*carousel section starts*/
+  .slides {
+    height: 60vh;
+  }
 
-	.gal-class{
-		padding-left: 0;
-		font-size: 28px;
-	}
-	/*test section starts*/
-	.testwrapper{
-		padding: 5% 5% 3% 5%;
-	}
-	.test-title{
-		font-size: 36px;
-	}
-	/*test section ends*/
-	/*gallery section ends*/
-	/*carousel section starts*/
-	.slides{
-		height: 60vh;
-	}
-
-	.reviews{
-		text-align: justify;
-	}
-	/*carousel section ends*/
+  .reviews {
+    text-align: justify;
+  }
+  /*carousel section ends*/
 }
 /*media query for standard laptop and desktop*/
-@media all and (min-width: 1140px){
-	.cover{
-		height: 90vh;
-		padding: 240px 150px;
-	}
+@media all and (min-width: 1140px) {
+  .cover {
+    height: 90vh;
+    padding: 240px 150px;
+  }
 
-	.card-title{
-		font: 26px/32px Montserrat;
-		font-weight: bold;
-	}
+  .card-title {
+    font: 26px/32px Montserrat;
+    font-weight: bold;
+  }
 
-	.orange, .grey{
-		padding: 10px 30px;
-	}
+  .orange,
+  .grey {
+    padding: 10px 30px;
+  }
 
-	.card-text{
-		font: 16px/26px Montserrat;
-	}
+  .card-text {
+    font: 16px/26px Montserrat;
+  }
 
-	.about-text{
-		font: 16px/28px Montserrat;
-	}
+  .about-text {
+    font: 16px/28px Montserrat;
+  }
 
-	#aboutsubtitle{
-		font-size: 20px;
-	}
+  #aboutsubtitle {
+    font-size: 20px;
+  }
 
-	.clas2{
-		font-size: 16px;
-	}
+  .clas2 {
+    font-size: 16px;
+  }
 
-	.enroll{
-		font-size: 16px;
-	}
+  .enroll {
+    font-size: 16px;
+  }
 
-	.gym-class{
-		font-size: 16px;
-	}
+  .gym-class {
+    font-size: 16px;
+  }
 
-	.title{
-		font-size: 30px
-	}
+  .title {
+    font-size: 30px;
+  }
 
-	.prog{
-		font: 24px/28px Montserrat;
-		font-weight: bold;
-		color: #000000;
-	}
+  .prog {
+    font: 24px/28px Montserrat;
+    font-weight: bold;
+    color: #000000;
+  }
 
-	#special{
-		font: 20px/28px Montserrat;
-	}
+  #special {
+    font: 20px/28px Montserrat;
+  }
 
-	.mn{
-		margin: 20px 0px 16px;
-	}
+  .mn {
+    margin: 20px 0px 16px;
+  }
 
-	.subtitle{
-		font-size: 20px;
-	}
+  .subtitle {
+    font-size: 20px;
+  }
 }
 /*aminations */
-.Gymclass{
-	filter: saturate(60%);
+.Gymclass {
+  filter: saturate(60%);
 }
-.Gymclass:hover{
-	filter: saturate(100%);
-	transition-duration: 1s;
-}
-
-.gallery{
-	filter: saturate(70%);	
+.Gymclass:hover {
+  filter: saturate(100%);
+  transition-duration: 1s;
 }
 
-.gallery:hover{
-	filter: saturate(100%);
-	transition-duration: 1s;
+.gallery {
+  filter: saturate(70%);
 }
 
-.pricing{
-	filter: saturate(60%);
+.gallery:hover {
+  filter: saturate(100%);
+  transition-duration: 1s;
 }
 
-.pricing:hover{
-	filter: saturate(100%);
-	transition-duration: 1s;
+.pricing {
+  filter: saturate(60%);
+}
+
+.pricing:hover {
+  filter: saturate(100%);
+  transition-duration: 1s;
 }
